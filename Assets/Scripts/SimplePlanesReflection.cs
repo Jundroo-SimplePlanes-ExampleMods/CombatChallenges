@@ -26,7 +26,7 @@
 
                public partial class DamageableBody : ProxyType<DamageableBody>
                {
-                  private MethodInfo _onDamageReceived = GetMethod("OnDamageReceived", DamageTypeEnum.RealType, typeof(float), typeof(Vector3), typeof(Vector3?));
+                  private static MethodInfo _onDamageReceived = GetMethod("OnDamageReceived", DamageTypeEnum.RealType, typeof(float), typeof(Vector3), typeof(Vector3?));
 
                   public DamageableBody(object realObject) : base(realObject)
                   {
@@ -34,7 +34,7 @@
 
                   public void OnDamageReceived(DamageType type, float damage, Vector3 position, Vector3? normal)
                   {
-                     this._onDamageReceived.Invoke(this.RealObject, new object[] { (int)type, damage, position, normal });
+                     _onDamageReceived.Invoke(this.RealObject, new object[] { (int)type, damage, position, normal });
                   }
                }
 
@@ -53,9 +53,9 @@
 
                public partial class AntiAircraftTankScript : ProxyType<AntiAircraftTankScript>
                {
-                  private FieldInfo __groundTarget = GetField("_groundTarget");
+                  private static FieldInfo __groundTarget = GetField("_groundTarget");
 
-                  private PropertyInfo _isHostile = GetProperty("IsHostile");
+                  private static PropertyInfo _isHostile = GetProperty("IsHostile");
 
                   public AntiAircraftTankScript(object realObject) : base(realObject)
                   {
@@ -65,7 +65,7 @@
                   {
                      get
                      {
-                        return new GroundTarget(this.__groundTarget.GetValue(this.RealObject));
+                        return new GroundTarget(__groundTarget.GetValue(this.RealObject));
                      }
                   }
 
@@ -73,19 +73,19 @@
                   {
                      get
                      {
-                        return (bool)this._isHostile.GetValue(this.RealObject, null);
+                        return (bool)_isHostile.GetValue(this.RealObject, null);
                      }
 
                      set
                      {
-                        this._isHostile.SetValue(this.RealObject, value, null);
+                        _isHostile.SetValue(this.RealObject, value, null);
                      }
                   }
                }
 
                public partial class BasicConvoyProviderScript : ProxyType<BasicConvoyProviderScript>
                {
-                  private FieldInfo __convoyPrefabs = GetField("_convoyPrefabs");
+                  private static FieldInfo __convoyPrefabs = GetField("_convoyPrefabs");
 
                   public BasicConvoyProviderScript(object realObject) : base(realObject)
                   {
@@ -125,21 +125,21 @@
                         }
                      }
 
-                     this.__convoyPrefabs.SetValue(this.RealObject, prefabs);
+                     __convoyPrefabs.SetValue(this.RealObject, prefabs);
                   }
                }
 
                public partial class ConvoyScript : ProxyType<ConvoyScript>
                {
-                  private FieldInfo __convoyProvider = GetField("_convoyProvider");
+                  private static FieldInfo __convoyProvider = GetField("_convoyProvider");
 
-                  private FieldInfo __startingWaypoints = GetField("_startingWaypoints");
+                  private static FieldInfo __startingWaypoints = GetField("_startingWaypoints");
 
-                  private MethodInfo _initialize = GetMethod("Initialize");
+                  private static MethodInfo _initialize = GetMethod("Initialize");
 
-                  private PropertyInfo _isHostile = GetProperty("IsHostile");
+                  private static PropertyInfo _isHostile = GetProperty("IsHostile");
 
-                  private PropertyInfo _waypoints = GetProperty("Waypoints");
+                  private static PropertyInfo _waypoints = GetProperty("Waypoints");
 
                   public ConvoyScript(object realObject) : base(realObject)
                   {
@@ -149,12 +149,12 @@
                   {
                      get
                      {
-                        return (bool)this._isHostile.GetValue(this.RealObject, null);
+                        return (bool)_isHostile.GetValue(this.RealObject, null);
                      }
 
                      set
                      {
-                        this._isHostile.SetValue(this.RealObject, value, null);
+                        _isHostile.SetValue(this.RealObject, value, null);
                      }
                   }
 
@@ -162,12 +162,12 @@
                   {
                      get
                      {
-                        return (List<Transform>)this._waypoints.GetValue(this.RealObject, null);
+                        return (List<Transform>)_waypoints.GetValue(this.RealObject, null);
                      }
 
                      set
                      {
-                        this._waypoints.SetValue(this.RealObject, value, null);
+                        _waypoints.SetValue(this.RealObject, value, null);
                      }
                   }
 
@@ -178,28 +178,28 @@
 
                   public void Initialize(IEnumerable<Transform> waypoints, bool initiallyHostile)
                   {
-                     this._initialize.Invoke(this.RealObject, new object[0]);
+                     _initialize.Invoke(this.RealObject, new object[0]);
 
-                     this.__startingWaypoints.SetValue(this.RealObject, new Transform[0]);
+                     __startingWaypoints.SetValue(this.RealObject, new Transform[0]);
                      this.Waypoints = new List<Transform>(waypoints);
                      this.IsHostile = initiallyHostile;
                   }
 
                   public void SetConvoyProvider(BasicConvoyProviderScript convoyProvider)
                   {
-                     this.__convoyProvider.SetValue(this.RealObject, convoyProvider.RealObject);
+                     __convoyProvider.SetValue(this.RealObject, convoyProvider.RealObject);
                   }
                }
 
                public partial class SimpleGroundVehicleScript : ProxyType<SimpleGroundVehicleScript>
                {
-                  private FieldInfo __speed = GetField("_speed");
+                  private static FieldInfo __speed = GetField("_speed");
 
-                  private FieldInfo __targetVelocity = GetField("_targetVelocity");
+                  private static FieldInfo __targetVelocity = GetField("_targetVelocity");
 
-                  private PropertyInfo _isDestroyed = GetProperty("IsDestroyed");
+                  private static PropertyInfo _isDestroyed = GetProperty("IsDestroyed");
 
-                  private PropertyInfo _isHostile = GetProperty("IsHostile");
+                  private static PropertyInfo _isHostile = GetProperty("IsHostile");
 
                   public SimpleGroundVehicleScript(object realObject) : base(realObject)
                   {
@@ -209,12 +209,12 @@
                   {
                      get
                      {
-                        return (float)this.__speed.GetValue(this.RealObject);
+                        return (float)__speed.GetValue(this.RealObject);
                      }
 
                      set
                      {
-                        this.__speed.SetValue(this.RealObject, value);
+                        __speed.SetValue(this.RealObject, value);
                      }
                   }
 
@@ -222,12 +222,12 @@
                   {
                      get
                      {
-                        return (float)this.__targetVelocity.GetValue(this.RealObject);
+                        return (float)__targetVelocity.GetValue(this.RealObject);
                      }
 
                      set
                      {
-                        this.__targetVelocity.SetValue(this.RealObject, value);
+                        __targetVelocity.SetValue(this.RealObject, value);
                      }
                   }
 
@@ -235,12 +235,12 @@
                   {
                      get
                      {
-                        return (bool)this._isDestroyed.GetValue(this.RealObject, null);
+                        return (bool)_isDestroyed.GetValue(this.RealObject, null);
                      }
 
                      set
                      {
-                        this._isDestroyed.SetValue(this.RealObject, value, null);
+                        _isDestroyed.SetValue(this.RealObject, value, null);
                      }
                   }
 
@@ -248,12 +248,12 @@
                   {
                      get
                      {
-                        return (bool)this._isHostile.GetValue(this.RealObject, null);
+                        return (bool)_isHostile.GetValue(this.RealObject, null);
                      }
 
                      set
                      {
-                        this._isHostile.SetValue(this.RealObject, value, null);
+                        _isHostile.SetValue(this.RealObject, value, null);
                      }
                   }
                }
@@ -266,7 +266,7 @@
             {
                public partial class GroundTarget : ProxyType<GroundTarget>
                {
-                  private PropertyInfo _maxVisibilityRange = GetProperty("MaxVisibleRange");
+                  private static PropertyInfo _maxVisibilityRange = GetProperty("MaxVisibleRange");
 
                   public GroundTarget(object realObject) : base(realObject)
                   {
@@ -276,12 +276,12 @@
                   {
                      get
                      {
-                        return (float)this._maxVisibilityRange.GetValue(this.RealObject, null);
+                        return (float)_maxVisibilityRange.GetValue(this.RealObject, null);
                      }
 
                      set
                      {
-                        this._maxVisibilityRange.SetValue(this.RealObject, value, null);
+                        _maxVisibilityRange.SetValue(this.RealObject, value, null);
                      }
                   }
                }
