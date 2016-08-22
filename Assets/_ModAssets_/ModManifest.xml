@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModManifest buildID="c619310b-3bb7-4b6c-8f6e-4c4647f6697e">
+  <Mod name="Combat Challenges" author="Nathan" versionMajor="1" versionMinor="0" lastUpdated="8/22/2016 8:36:03 PM" apiVersion="1.0.0.0" description="A collection of combat based challenges.">
+    <Steam title="Combat Challenges" visibility="Public" previewPath="TODO" language="English" tags="Levels">
+      <description>A collection of combat based challenges.</description>
+    </Steam>
+    <GameObjects>
+      <GameObject name="BanditAnnihilationLevel" path="Assets/_ModAssets_/BanditAnnihilationLevel.prefab" />
+      <GameObject name="BanditAssaultLevel" path="Assets/_ModAssets_/BanditAssaultLevel.prefab" />
+      <GameObject name="KrakabloaSeekAndDestroyLevel" path="Assets/_ModAssets_/KrakabloaSeekAndDestroyLevel.prefab" />
+      <GameObject name="MaywarConvoyChaos1Level" path="Assets/_ModAssets_/MaywarConvoyChaos1Level.prefab" />
+      <GameObject name="MaywarConvoyChaos2Level" path="Assets/_ModAssets_/MaywarConvoyChaos2Level.prefab" />
+      <GameObject name="SnowstoneBaseAnnihilationLevel" path="Assets/_ModAssets_/SnowstoneBaseAnnihilationLevel.prefab" />
+      <GameObject name="SnowstoneBaseAssaultLevel" path="Assets/_ModAssets_/SnowstoneBaseAssaultLevel.prefab" />
+      <GameObject name="UssBeastAnnihilationLevel" path="Assets/_ModAssets_/UssBeastAnnihilationLevel.prefab" />
+      <GameObject name="UssBeastAssaultLevel" path="Assets/_ModAssets_/UssBeastAssaultLevel.prefab" />
+    </GameObjects>
+    <Assets>
+      <Asset path="Assets/Resources/Materials/EndZoneMaterial.mat" />
+    </Assets>
+    <Assemblies>
+      <Assembly name="CombatChallenges-Assembly-CSharp.dll" path="Assets/_ModAssets_/CombatChallenges-Assembly-CSharp.dll.bytes" isProjectAssembly="true" />
+    </Assemblies>
+    <Sections>
+      <SimplePlanesMod apiVersion="1.0.0.0">
+        <Maps />
+        <Levels>
+          <Level name="Bandit Assault 2" description="Bandit Assault got a whole lot harder. Destroy all 10 targets, including the destroyer!" mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.BanditAnnihilationLevel, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <Level name="Bandit Assault 1" description="Destroy all 4 tanks at Bandit Airport. Be careful, they have support and base defenses!" mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.BanditAssaultLevel, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <Level name="Convoy Chaos: Maywar 1" description="Ready to blow up some convoys? Several convoys are speeding through the desert and up to no good. Stop them before they reach their destination." mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.ConvoyChaosMaywar1Level, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <Level name="Convoy Chaos: Maywar 2" description="The chaos continues... More convoys to destroy and this time they may fight back!" mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.ConvoyChaosMaywar2Level, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <Level name="Seek&amp;Destroy: Krakabloa 1" description="Find and destroy all 4 tanks on the island. Your targeting system will not pick them up until you get close. Be careful, they may spot you first and they are not very friendly." mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.KrakabloaSeekAndDestroy1Level, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <Level name="Seek&amp;Destroy: Krakabloa 2" description="Find and destroy all 8 tanks on the island. Your targeting system will not pick them up until you get close. Be careful, they may spot you first and they are not very friendly." mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.KrakabloaSeekAndDestroy2Level, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <Level name="Seek&amp;Destroy: Krakabloa 3" description="Find and destroy all 12 tanks on the island. Your targeting system will not pick them up until you get close. Be careful, they may spot you first and they are not very friendly." mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.KrakabloaSeekAndDestroy3Level, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <Level name="Snowstone Base Assault 2" description="The Snowstone mountain base has received some upgrades. Go destroy all enemy targets." mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.SnowstoneBaseAnnihilationLevel, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <Level name="Snowstone Base Assault 1" description="The Snowstone mountain base has received some upgrades. Go destroy all enemy targets." mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.SnowstoneBaseAssaultLevel, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <Level name="USS Beast Assault 2" description="An enemy aircraft carrier, the USS Beast, is passing by Krakabloa. Now is the chance to take it out. Go sink the carrier and its 3 destroyer escorts. Be careful, the 3 destroyers will attack on sight." mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.UssBeastAnnihilationLevel, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+          <Level name="USS Beast Assault 1" description="An enemy aircraft carrier, the USS Beast, is passing by Krakabloa. Now is the chance to take it out. Go sink the carrier but beware its escorts. The 3 destroyers guarding it will attack on sight." mapName="Default Map" levelTypeName="Assets.Scripts.Levels.Definitions.UssBeastAssaultLevel, CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" />
+        </Levels>
+        <Parts />
+        <DesignerPlugins />
+        <MapPlugins />
+        <PersistentObjects />
+      </SimplePlanesMod>
+    </Sections>
+  </Mod>
+</ModManifest>
