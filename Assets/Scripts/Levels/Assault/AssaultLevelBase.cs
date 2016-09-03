@@ -117,8 +117,6 @@
                   return;
                }
 
-               this.EnemyMonitor.StartCoroutine(this.LateInitializeCoroutine());
-
                if (!string.IsNullOrEmpty(this.StartMessage))
                {
                   ServiceProvider.Instance.GameWorld.ShowStatusMessage(this.StartMessage);
@@ -157,28 +155,6 @@
          else if (ServiceProvider.Instance.PlayerAircraft.CriticallyDamaged)
          {
             this.EndLevel(false, this.CriticalDamageMessage, 0);
-         }
-      }
-
-      /// <summary>
-      /// A coroutine that handles some late initialization stuff (after the level as been loaded and at the end of the frame).
-      /// </summary>
-      private IEnumerator LateInitializeCoroutine()
-      {
-         yield return new WaitForEndOfFrame();
-
-         // Mod tools are bugged when this was written.
-         // Ships don't obey the initially hostile setting.
-         // Workaround this by finding any hostile ships manually changing
-         // the hostility settings to friendly and then back to hostile.
-         var ships = this.EnemyMonitor.GetComponentsInChildren<ShipProxy>();
-         foreach (var ship in ships)
-         {
-            if (ship.IsHostile)
-            {
-               ship.ChangeState(false);
-               ship.ChangeState(true);
-            }
          }
       }
    }

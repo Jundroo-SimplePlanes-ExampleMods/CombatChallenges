@@ -113,7 +113,7 @@
 
          // We need to grab the damageable body and kill it so the player's
          // targeting system will no longer allow it to be selected.
-         var damageableBody = new DamageableBody(obj.GetComponent(DamageableBody.RealType));
+         var damageableBody = DamageableBody.Wrap(obj.GetComponent(DamageableBody.RealType));
          if (damageableBody.RealObject == null)
          {
             Debug.LogErrorFormat("Turret '{0}' could not be disabled because the damageable body component could not be found.", gameObjectName);

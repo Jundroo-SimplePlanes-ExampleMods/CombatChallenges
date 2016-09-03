@@ -27,13 +27,12 @@
       /// <param name="other">The collider that entered the trigger.</param>
       protected virtual void OnTriggerEnter(Collider other)
       {
-         var vehicle = other.GetComponentInParent(SimpleGroundVehicleScript.RealType);
+         var vehicle = SimpleGroundVehicleScript.GetComponentInParent(other);
          if (vehicle != null)
          {
             this.VehicleHasReachedEndZone = true;
-
-            var vehicleProxy = new SimpleGroundVehicleScript(vehicle);
-            vehicleProxy._Speed = 0;
+            
+            vehicle._Speed = 0;
          }
       }
    }

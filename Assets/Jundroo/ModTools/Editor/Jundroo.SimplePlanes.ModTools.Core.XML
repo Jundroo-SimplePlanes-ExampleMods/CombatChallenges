@@ -99,7 +99,7 @@
             An object representing a custom level included in a mod.
             </summary>
         </member>
-        <member name="M:Jundroo.SimplePlanes.ModTools.Core.ModLevelInfo.#ctor(System.String,System.String,System.String,System.String)">
+        <member name="M:Jundroo.SimplePlanes.ModTools.Core.ModLevelInfo.#ctor(System.String,System.String,System.String,System.String,Jundroo.SimplePlanes.ModTools.LevelSupportedPlatforms)">
             <summary>
             Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.Core.ModLevelInfo"/> struct.
             </summary>
@@ -107,15 +107,17 @@
             <param name="description">The description of the level.</param>
             <param name="mapName">The name of the map for the level.</param>
             <param name="levelTypeName">The full type name of the level class.</param>
+            <param name="supportedPlaform">The platforms that support the level.</param>
         </member>
-        <member name="M:Jundroo.SimplePlanes.ModTools.Core.ModLevelInfo.#ctor(System.String,System.String,System.String,System.String,Jundroo.ModTools.Core.ModInfo)">
+        <member name="M:Jundroo.SimplePlanes.ModTools.Core.ModLevelInfo.#ctor(System.String,System.String,System.String,System.String,Jundroo.SimplePlanes.ModTools.LevelSupportedPlatforms,Jundroo.ModTools.Core.ModInfo)">
             <summary>
-            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.Core.ModLevelInfo"/> struct.
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.Core.ModLevelInfo" /> struct.
             </summary>
             <param name="name">The name of the level.</param>
             <param name="description">The description of the level.</param>
             <param name="mapName">The name of the map for the level.</param>
             <param name="levelTypeName">The full type name of the level class.</param>
+            <param name="supportedPlaform">The platforms that support the level.</param>
             <param name="mod">The mod associated with the level.</param>
         </member>
         <member name="P:Jundroo.SimplePlanes.ModTools.Core.ModLevelInfo.Description">
@@ -156,6 +158,14 @@
             </summary>
             <value>
             The name of the level.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.Core.ModLevelInfo.SupportedPlatform">
+            <summary>
+            Gets the supported platform(s) for the level.
+            </summary>
+            <value>
+            The supported platform(s) for the level.
             </value>
         </member>
         <member name="T:Jundroo.SimplePlanes.ModTools.Core.ModManifestData">
@@ -371,6 +381,7 @@
             Loads all the map plugins for the specified map.
             </summary>
             <param name="mapName">The name of the map for which to load plugins.</param>
+            <returns>The list of loaded map plugin game objects.</returns>
         </member>
         <member name="T:Jundroo.SimplePlanes.ModTools.Core.ModManager">
             <summary>
@@ -530,6 +541,7 @@
             Loads all the map plugins for the specified map.
             </summary>
             <param name="mapName">The name of the map for which to load plugins.</param>
+            <returns>The list of loaded map plugin game objects.</returns>
         </member>
         <member name="M:Jundroo.SimplePlanes.ModTools.Core.ModManager.AssemblyResolve(System.Object,System.ResolveEventArgs)">
             <summary>

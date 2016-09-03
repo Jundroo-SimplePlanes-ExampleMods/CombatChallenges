@@ -4,6 +4,222 @@
         <name>Jundroo.SimplePlanes.ModTools</name>
     </assembly>
     <members>
+        <member name="T:Jundroo.SimplePlanes.ModTools.AI.AIAircraftSpawner">
+            <summary>
+            A placeholder class that will spawn an AI aircraft at runtime.
+            </summary>
+            <seealso cref="T:UnityEngine.MonoBehaviour" />
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.AI.AIAircraftSpawner._aircraftId">
+            <summary>
+            The unique ID for the aircraft XML.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.AI.AIAircraftSpawner._aircraftXmlFile">
+            <summary>
+            The aircraft XML file of the aircraft to spawn.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.AI.AIAircraftSpawner._initialVelocity">
+            <summary>
+            The initial velocity of the aircraft.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.AI.AIAircraftSpawner._mode">
+            <summary>
+            The aircraft AI mode.
+            </summary>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.AIAircraftSpawner.AircraftScript">
+            <summary>
+            Gets the aircraft script of the spawned aircraft.
+            </summary>
+            <value>
+            The aircraft script of the spawned aircraft.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.AIAircraftSpawner.AIControlledAircraftScript">
+            <summary>
+            Gets the AI controlled aircraft script of the spawned aircraft.
+            </summary>
+            <value>
+            The AI controlled aircraft script of the spawned aircraft.
+            </value>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.AI.AIAircraftSpawner.Start">
+            <summary>
+            Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
+            </summary>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.AI.IAiControlledAircraftScript">
+            <summary>
+            An interface for an AI controlled aircraft script.
+            </summary>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAiControlledAircraftScript.AiAircraftScript">
+            <summary>
+            Gets the AI aircraft script.
+            </summary>
+            <value>
+            The AI aircraft script.
+            </value>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.AI.IAiControlledAircraftScript.SetTarget(System.Func{UnityEngine.Vector3},System.Boolean)">
+            <summary>
+            Sets the target.
+            </summary>
+            <param name="positionFunc">The position function.</param>
+            <param name="mainTarget"><c>true</c> if the target is the main target.</param>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.AI.IAiControlledAircraftScript.SetTarget(UnityEngine.Vector3,System.Boolean)">
+            <summary>
+            Sets the target override.  Set to null to disable override.
+            </summary>
+            <param name="targetPositionFloatingOrigin">The target position in floating origin (current world) coordinates.</param>
+            <param name="mainTarget"><c>true</c> if the target is the main target.</param>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.AI.ConvoySpawner">
+            <summary>
+            A component allowing convoys to be spawned and configured.
+            </summary>
+            <seealso cref="T:UnityEngine.MonoBehaviour" />
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.AI.ConvoySpawner._isHostile">
+            <summary>
+            A value indicating whether or not the convoy is hostile.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.AI.ConvoySpawner._targetVelocity">
+            <summary>
+            The target velocity of the convoy.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.AI.ConvoySpawner._vehicles">
+            <summary>
+            The vehicle types and order that make up the convoy.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.AI.ConvoySpawner._waypoints">
+            <summary>
+            The waypoints for the convoy.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.AI.ConvoySpawner.OnDrawGizmos">
+            <summary>
+            Used to draw gizmos that are pickable and always drawn.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.AI.ConvoySpawner.Start">
+            <summary>
+            Start is called on the frame when a script is enabled just before any of the Update methods is called the first time.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.AI.ConvoySpawner.LateInitializationCoroutine">
+            <summary>
+            A coroutine that handles some late initialization logic.
+            </summary>
+            <returns>The enumerator for the coroutine.</returns>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript">
+            <summary>
+            An interface for an aircraft script.
+            </summary>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript.AirSpeed">
+            <summary>
+            Gets or sets the air speed.
+            </summary>
+            <value>
+            The air speed.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript.Altitude">
+            <summary>
+            Gets the altitude in meters.
+            </summary>
+            <value>
+            The altitude.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript.CriticallyDamaged">
+            <summary>
+            Gets a value indicating whether the aircraft is critically damaged.
+            </summary>
+            <value>
+              <c>true</c> if the aircraft is critically damaged; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript.Fuel">
+            <summary>
+            Gets the fuel in liters.
+            </summary>
+            <value>
+            The fuel.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript.FuelCapacity">
+            <summary>
+            Gets the total fuel capacity (in liters).
+            </summary>
+            <value>
+            The fuel capacity.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript.GlobalPosition">
+            <summary>
+            Gets or sets the global position of the main cockpit, taking in to account the floating origin.
+            </summary>
+            <value>
+            The global position of the main cockpit, taking in to account the floating origin.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript.Position">
+            <summary>
+            Gets or sets the current position of the main cockpit.
+            </summary>
+            <value>
+            The position of the main cockpit.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript.Rotation">
+            <summary>
+            Gets or sets the rotation of the aircraft.
+            </summary>
+            <value>
+            The rotation of the aircraft.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript.Script">
+            <summary>
+            Gets the real monobehaviour aircraft script.
+            </summary>
+            <value>
+            The real monobehaviour aircraft script.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.AI.IAircraftScript.Velocity">
+            <summary>
+            Gets the aircraft's velocity.
+            </summary>
+            <value>
+            The aircraft's velocity.
+            </value>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.AI.ConvoyVehicleType">
+            <summary>
+            An enumeration defining the types of convoy vehicles.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.AI.ConvoyVehicleType.Truck">
+            <summary>
+            A convoy truck.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.AI.ConvoyVehicleType.AATank">
+            <summary>
+            A convoy anti-air tank.
+            </summary>
+        </member>
         <member name="T:Jundroo.SimplePlanes.ModTools.DesignerPlugin">
             <summary>
             A component that is added to a game object that should be created whenever a map is loaded.
@@ -1985,6 +2201,26 @@
             The map of layer values and their associated layer names.
             </summary>
         </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.LevelSupportedPlatforms">
+            <summary>
+            An enumeration defining the platforms on which a level is supported.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.LevelSupportedPlatforms.All">
+            <summary>
+            All platforms support the level.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.LevelSupportedPlatforms.Standalone">
+            <summary>
+            Standalone platforms support the level (PC and OSX).
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.LevelSupportedPlatforms.Mobile">
+            <summary>
+            Standalone platforms support the level.
+            </summary>
+        </member>
         <member name="T:Jundroo.SimplePlanes.ModTools.IInternalLevelServices">
             <summary>
             An interface providing services mod levels can call on internal levels.
@@ -2166,12 +2402,23 @@
         </member>
         <member name="M:Jundroo.SimplePlanes.ModTools.Level.#ctor(System.String,System.String,System.String)">
             <summary>
-            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.Level"/> class.
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.Level" /> class.
             </summary>
             <param name="levelName">The name of the level.</param>
             <param name="mapName">The name of the map.
             This must exactly match the name of a default map or map in the current mod in order for it to be loaded.</param>
             <param name="levelDescription">The level description.</param>
+            <exception cref="T:System.ArgumentException">Thrown if the level name, map name, or level description are <c>null</c> or empty.</exception>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.Level.#ctor(System.String,System.String,System.String,Jundroo.SimplePlanes.ModTools.LevelSupportedPlatforms)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.Level" /> class.
+            </summary>
+            <param name="levelName">The name of the level.</param>
+            <param name="mapName">The name of the map.
+            This must exactly match the name of a default map or map in the current mod in order for it to be loaded.</param>
+            <param name="levelDescription">The level description.</param>
+            <param name="supportedPlatform">The platforms that support the level.</param>
             <exception cref="T:System.ArgumentException">Thrown if the level name, map name, or level description are <c>null</c> or empty.</exception>
         </member>
         <member name="P:Jundroo.SimplePlanes.ModTools.Level.Description">
@@ -2255,6 +2502,14 @@
             </summary>
             <value>
             The name of the map.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.Level.SupportedPlatform">
+            <summary>
+            Gets the supported platform(s) for the level.
+            </summary>
+            <value>
+            The supported platform(s) for the level.
             </value>
         </member>
         <member name="P:Jundroo.SimplePlanes.ModTools.Level.ElapsedTime">
@@ -6081,6 +6336,564 @@
             Gets the proximity loader component.
             </summary>
             <returns>The proximity loader component.</returns>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.LocationType">
+            <summary>
+            An enumeration that describes a type of location.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.LocationType.Default">
+            <summary>
+            A value indicating a default location type.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.LocationType.Custom">
+            <summary>
+            A value indicating a custom location type.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.LocationType.Discoverable">
+            <summary>
+            A value indicating a discoverable location type.
+            </summary>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.StartingLocation">
+            <summary>
+            A proxy type for a starting location.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.StartingLocation.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.StartingLocation"/> class.
+            </summary>
+            <param name="realObject">The real object being wrapped by this proxy.</param>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.StartingLocation.#ctor(System.String,System.String,Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.LocationType,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.StartingLocation"/> class.
+            </summary>
+            <param name="name">The name of the location.</param>
+            <param name="areaName">Name of the area in which the location resides.</param>
+            <param name="type">The type of the location.</param>
+            <param name="position">The position of the location.</param>
+            <param name="rotation">The rotation of the location.</param>
+            <param name="initialVelocity">The initial velocity of the location.</param>
+            <param name="isRunwayTakeoff">A value indicating if this is a runway takeoff location.</param>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.BasicConvoyProviderScript">
+            <summary>
+            A proxy object for a convoy provider script.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.BasicConvoyProviderScript.__convoyPrefabs">
+            <summary>
+            The convoy prefabs private field.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.BasicConvoyProviderScript.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.BasicConvoyProviderScript"/> class.
+            </summary>
+            <param name="realObject">The real object being wrapped by this proxy.</param>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.BasicConvoyProviderScript.AddComponent(UnityEngine.GameObject)">
+            <summary>
+            Adds the component.
+            </summary>
+            <param name="gameObject">The game object.</param>
+            <returns>The proxy for the provider.</returns>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.BasicConvoyProviderScript.ConfigureConvoy(Jundroo.SimplePlanes.ModTools.AI.ConvoyVehicleType[])">
+            <summary>
+            Configures the convoy.
+            </summary>
+            <param name="vehicleTypes">The vehicle types.</param>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript">
+            <summary>
+            A proxy type for a convoy script.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript.__convoyProvider">
+            <summary>
+            The convoy provider private field.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript.__startingWaypoints">
+            <summary>
+            The staring waypoints private field.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript._initialize">
+            <summary>
+            The initialize method.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript._isHostile">
+            <summary>
+            The is hostile property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript._waypoints">
+            <summary>
+            The waypoints property.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript"/> class.
+            </summary>
+            <param name="realObject">The real object being wrapped by this proxy.</param>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript.IsHostile">
+            <summary>
+            Gets or sets a value indicating whether this convoy is hostile.
+            </summary>
+            <value>
+            <c>true</c> if this convoy is hostile; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript.Waypoints">
+            <summary>
+            Gets or sets the waypoints for the convoy.
+            </summary>
+            <value>
+            The waypoints for the convoy.
+            </value>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript.AddComponent(UnityEngine.GameObject)">
+            <summary>
+            Adds the component.
+            </summary>
+            <param name="gameObject">The game object.</param>
+            <returns>The proxy object for the convoy script.</returns>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript.Initialize(System.Collections.Generic.IEnumerable{UnityEngine.Transform},System.Boolean)">
+            <summary>
+            Initializes the convoy.
+            </summary>
+            <param name="waypoints">The waypoints for the convoy.</param>
+            <param name="initiallyHostile">The initial hostility setting for the convoy.</param>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.ConvoyScript.SetConvoyProvider(Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.BasicConvoyProviderScript)">
+            <summary>
+            Sets the convoy provider.
+            </summary>
+            <param name="convoyProvider">The convoy provider.</param>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript">
+            <summary>
+            A proxy type for a simple ground vehicle script.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript.__speed">
+            <summary>
+            The speed private field.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript.__targetVelocity">
+            <summary>
+            The target velocity private field.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript._isDestroyed">
+            <summary>
+            The is destroyed property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript._isHostile">
+            <summary>
+            The is hostile property.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript"/> class.
+            </summary>
+            <param name="realObject">The real object being wrapped by this proxy.</param>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript._Speed">
+            <summary>
+            Gets or sets the speed private field.
+            </summary>
+            <value>
+            The speed private field.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript._TargetVelocity">
+            <summary>
+            Gets or sets the target velocity private field.
+            </summary>
+            <value>
+            The target velocity private field.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript.IsDestroyed">
+            <summary>
+            Gets or sets a value indicating whether or not the vehicle is destroyed.
+            </summary>
+            <value>
+            A value indicating whether or not the vehicle is destroyed.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Levels.Enemies.SimpleGroundVehicleScript.IsHostile">
+            <summary>
+            Gets or sets a value indicating whether or not the vehicle is hostile.
+            </summary>
+            <value>
+            A value indicating whether or not the vehicle is hostile.
+            </value>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript">
+            <summary>
+            A proxy object for an aircraft script.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript._airSpeed">
+            <summary>
+            The air speed property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript._altitude">
+            <summary>
+            The altitude property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript._criticallyDamaged">
+            <summary>
+            The critically damaged property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript._fuel">
+            <summary>
+            The fuel property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript._fuelCapacity">
+            <summary>
+            The fuel capacity property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript._globalPosition">
+            <summary>
+            The global position property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript._position">
+            <summary>
+            The position property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript._rotation">
+            <summary>
+            The rotation property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript._velocity">
+            <summary>
+            The velocity property.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript"/> class.
+            </summary>
+            <param name="realObject">The real object being wrapped by this proxy.</param>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.AirSpeed">
+            <summary>
+            Gets or sets the air speed.
+            </summary>
+            <value>
+            The air speed.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.Altitude">
+            <summary>
+            Gets the altitude in meters.
+            </summary>
+            <value>
+            The altitude.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.CriticallyDamaged">
+            <summary>
+            Gets a value indicating whether the aircraft is critically damaged.
+            </summary>
+            <value>
+            <c>true</c> if the aircraft is critically damaged; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.Fuel">
+            <summary>
+            Gets the fuel in liters.
+            </summary>
+            <value>
+            The fuel.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.FuelCapacity">
+            <summary>
+            Gets the total fuel capacity (in liters).
+            </summary>
+            <value>
+            The fuel capacity.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.GlobalPosition">
+            <summary>
+            Gets or sets the global position of the main cockpit, taking in to account the floating origin.
+            </summary>
+            <value>
+            The global position of the main cockpit, taking in to account the floating origin.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.Position">
+            <summary>
+            Gets or sets the current position of the main cockpit.
+            </summary>
+            <value>
+            The position of the main cockpit.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.Rotation">
+            <summary>
+            Gets or sets the rotation of the aircraft.
+            </summary>
+            <value>
+            The rotation of the aircraft.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.Script">
+            <summary>
+            Gets the real monobehaviour aircraft script.
+            </summary>
+            <value>
+            The real monobehaviour aircraft script.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.AircraftScript.Velocity">
+            <summary>
+            Gets the aircraft's velocity.
+            </summary>
+            <value>
+            The aircraft's velocity.
+            </value>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiControlledAircraftScript">
+            <summary>
+            A proxy type for an AI controlled aircraft script.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiControlledAircraftScript._aiAircraftScript">
+            <summary>
+            The AI aircraft script.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiControlledAircraftScript._setTarget">
+            <summary>
+            The set target method.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiControlledAircraftScript._setTargetFunc">
+            <summary>
+            The set target method taking a function.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiControlledAircraftScript.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiControlledAircraftScript"/> class.
+            </summary>
+            <param name="realObject">The real object being wrapped by this proxy.</param>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiControlledAircraftScript.AiAircraftScript">
+            <summary>
+            Gets the AI aircraft script.
+            </summary>
+            <value>
+            The AI aircraft script.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiControlledAircraftScript.Jundroo#SimplePlanes#ModTools#AI#IAiControlledAircraftScript#AiAircraftScript">
+            <summary>
+            Gets the AI aircraft script.
+            </summary>
+            <value>
+            The AI aircraft script.
+            </value>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiControlledAircraftScript.SetTarget(System.Func{UnityEngine.Vector3},System.Boolean)">
+            <summary>
+            Sets the target.
+            </summary>
+            <param name="positionFunc">The position function.</param>
+            <param name="mainTarget"><c>true</c> if the target is the main target.</param>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiControlledAircraftScript.SetTarget(UnityEngine.Vector3,System.Boolean)">
+            <summary>
+            Sets the target override.  Set to null to disable override.
+            </summary>
+            <param name="targetPositionFloatingOrigin">The target position in floating origin (current world) coordinates.</param>
+            <param name="mainTarget"><c>true</c> if the target is the main target.</param>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiManagerScript">
+            <summary>
+            A proxy type for an AI manager script.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiManagerScript._instance">
+            <summary>
+            The instance property.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiManagerScript._spawnSandboxAiFromXml">
+            <summary>
+            The method for spawning AI from XML.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiManagerScript.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiManagerScript"/> class.
+            </summary>
+            <param name="realObject">The real object being wrapped by this proxy.</param>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiManagerScript.Instance">
+            <summary>
+            Gets the instance of the AI manager.
+            </summary>
+            <value>
+            The instance of the AI manager.
+            </value>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiManagerScript.SpawnSandboxAiFromXml(System.String,System.String,System.Boolean,System.Boolean,Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Game.Settings.StartingLocation,System.Nullable{Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiMode})">
+            <summary>
+            Spawns the specified AI aircraft for use in sandbox mode.
+            </summary>
+            <param name="aircraftId">The ID to use for the aircraft being spawned.</param>
+            <param name="aircraftXml">The XML for the aircraft being spawned.</param>
+            <param name="autoDespawn">If set to <c>true</c>, the aircraft will be set to automatically despawn under certain conditions.</param>
+            <param name="forceSpawnEvenIfUnflyable">If set to <c>true</c> the spawning of the aircraft will be forced, even if it is flagged as unflyable.</param>
+            <param name="location">The location at which to spawn the aircraft.</param>
+            <param name="aiMode">The AI mode for the aircraft.</param>
+            <returns>The AI controlled aircraft script for the aircraft that was spawned.</returns>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.AiMode">
+            <summary>
+            Enumeration defining AI mode types.
+            </summary>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.ControlSystems.AiCsSandboxAirTraffic">
+            <summary>
+            A proxy type for AiCsSandboxAirTraffic.
+            </summary>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.Assets.Scripts.Parts.Modifiers.AircraftAi.ControlSystems.AiCsSandboxAirTraffic.AiMode">
+            <summary>
+            A proxy type for the AiMode enumeration.
+            </summary>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1">
+            <summary>
+            A proxy class that wraps an underlying SimplePlanes type and provides reflection based methods for interacting with that type.
+            </summary>
+            <typeparam name="T">The concrete type of the proxy class.</typeparam>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.AllBindings">
+            <summary>
+            A collection of common binding flags usable for most reflection methods.
+            </summary>
+        </member>
+        <member name="F:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1._realType">
+            <summary>
+            The real type represented by this proxy type.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.#ctor(System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1"/> class.
+            </summary>
+            <param name="realObject">The real object being wrapped by this proxy.</param>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1"/> class.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.#ctor(System.Object[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1" /> class.
+            </summary>
+            <param name="constructorParameters">The constructor parameters.</param>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.RealType">
+            <summary>
+            Gets the real type represented by this proxy type.
+            </summary>
+            <value>
+            The real type represented by this proxy type.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.RealObject">
+            <summary>
+            Gets or sets the real object being wrapped by this proxy.
+            </summary>
+            <value>
+            The real object being wrapped by this proxy.
+            </value>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.GetEvent(System.String)">
+            <summary>
+            Gets the specified event.
+            </summary>
+            <param name="name">The name of the event to get.</param>
+            <returns>The event info object.</returns>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.GetField(System.String)">
+            <summary>
+            Gets the specified field.
+            </summary>
+            <param name="name">The name of the field to retrieve.</param>
+            <returns>The field info object.</returns>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.GetMethod(System.String)">
+            <summary>
+            Gets the specified method info.
+            </summary>
+            <param name="name">The name of the method to retrieve.</param>
+            <returns>The requested method info object.</returns>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.GetMethod(System.String,System.Type[])">
+            <summary>
+            Gets the specified method info.
+            </summary>
+            <param name="name">The name of the method to retrieve.</param>
+            <param name="parameters">The parameters types for the method.</param>
+            <returns>The requested method info object.</returns>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.ProxyType`1.GetProperty(System.String)">
+            <summary>
+            Gets the specified property.
+            </summary>
+            <param name="name">The name of the property to retrieve.</param>
+            <returns>The property info object.</returns>
+        </member>
+        <member name="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.ReflectionHelper">
+            <summary>
+            A helper class used for reflecting on various SimplePlanes related code.
+            </summary>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.ReflectionTools.ReflectionHelper.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:Jundroo.SimplePlanes.ModTools.ReflectionTools.ReflectionHelper"/> class.
+            </summary>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.ReflectionTools.ReflectionHelper.AssemblyCSharp">
+            <summary>
+            Gets the default assembly for the game.
+            </summary>
+            <value>
+            The default assembly for the game.
+            </value>
         </member>
         <member name="T:Jundroo.SimplePlanes.ModTools.SimplePlanesModServiceProvider">
             <summary>

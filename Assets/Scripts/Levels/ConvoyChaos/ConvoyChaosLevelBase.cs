@@ -26,7 +26,7 @@
       /// <param name="levelDescription">The level description.</param>
       /// <param name="levelGameObjectName">The name of the root game object for the level so that it can be loaded from the mod.</param>
       public ConvoyChaosLevelBase(string levelName, string levelDescription, string levelGameObjectName)
-         : base(levelName, MapNames.Default, levelDescription)
+         : base(levelName, MapNames.Default, levelDescription, LevelSupportedPlatforms.Standalone)
       {
          this._levelGameObjectName = levelGameObjectName;
       }

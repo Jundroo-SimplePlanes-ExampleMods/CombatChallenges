@@ -298,6 +298,12 @@
             </summary>
             <param name="menuCommand">The menu command.</param>
         </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.Editor.MenuItems.CreateMapObjectAIAircraft(UnityEditor.MenuCommand)">
+            <summary>
+            Creates a proxy game object that loads an AI aircraft object at runtime.
+            </summary>
+            <param name="menuCommand">The menu command.</param>
+        </member>
         <member name="M:Jundroo.SimplePlanes.ModTools.Editor.MenuItems.CreateMapObjectMissileDefenseBase(UnityEditor.MenuCommand)">
             <summary>
             Creates a proxy game object that loads a missile defense base object at runtime.
@@ -316,6 +322,18 @@
             </summary>
             <param name="menuCommand">The menu command.</param>
         </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.Editor.MenuItems.CreateMapObjectAATank(UnityEditor.MenuCommand)">
+            <summary>
+            Creates a proxy game object that loads an anti-aircraft tank at runtime.
+            </summary>
+            <param name="menuCommand">The menu command.</param>
+        </member>
+        <member name="M:Jundroo.SimplePlanes.ModTools.Editor.MenuItems.CreateMapObjectConvoy(UnityEditor.MenuCommand)">
+            <summary>
+            Creates a proxy game object that loads a convoy at runtime.
+            </summary>
+            <param name="menuCommand">The menu command.</param>
+        </member>
         <member name="M:Jundroo.SimplePlanes.ModTools.Editor.MenuItems.CreateMapObjectDestroyer(UnityEditor.MenuCommand)">
             <summary>
             Creates a proxy game object that loads the Destroyer ship at runtime.
@@ -331,12 +349,6 @@
         <member name="M:Jundroo.SimplePlanes.ModTools.Editor.MenuItems.CreateMapObjectUssTiny(UnityEditor.MenuCommand)">
             <summary>
             Creates a proxy game object that loads the USS Tiny at runtime.
-            </summary>
-            <param name="menuCommand">The menu command.</param>
-        </member>
-        <member name="M:Jundroo.SimplePlanes.ModTools.Editor.MenuItems.CreateMapObjectAATank(UnityEditor.MenuCommand)">
-            <summary>
-            Creates a proxy game object that loads an anti-aircraft tank at runtime.
             </summary>
             <param name="menuCommand">The menu command.</param>
         </member>

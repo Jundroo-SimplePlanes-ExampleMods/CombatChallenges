@@ -154,7 +154,7 @@
                   tankScript = this._tankProxy.RealObject.GetComponent(AntiAircraftTankScript.RealType);
                }
 
-               this._tank = new AntiAircraftTankScript(tankScript);
+               this._tank = AntiAircraftTankScript.Wrap(tankScript);
                if (this._tank.RealObject == null)
                {
                   continue;

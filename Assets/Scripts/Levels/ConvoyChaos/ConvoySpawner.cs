@@ -23,16 +23,16 @@
       private bool _isHostile = true;
 
       /// <summary>
-      /// The target velocity of the convoy.
-      /// </summary>
-      [SerializeField]
-      private float _targetVelocity = 20f;
-
-      /// <summary>
       /// A value indicating whether or not the spawner should add spawned vehicles to a parent script monitoring for destruction of objectives.
       /// </summary>
       [SerializeField]
       private bool _monitorForDestruction = true;
+
+      /// <summary>
+      /// The target velocity of the convoy.
+      /// </summary>
+      [SerializeField]
+      private float _targetVelocity = 20f;
 
       /// <summary>
       /// The vehicle types and order that make up the convoy.
@@ -100,35 +100,41 @@
 
          if (this._monitorForDestruction)
          {
-            this.StartCoroutine(this.UpdateEnemyDestructionMonitorScriptCoroutine());
+            this.StartCoroutine(this.LateInitializationCoroutine());
          }
       }
 
       /// <summary>
-      /// Updates the enemy destruction monitor script with the spawned convoy vehicles.
+      /// The coroutine that handles some late initialization for the spawner.
       /// </summary>
       /// <returns>The enumerator for the coroutine.</returns>
-      private IEnumerator UpdateEnemyDestructionMonitorScriptCoroutine()
+      private IEnumerator LateInitializationCoroutine()
       {
          yield return null;
          yield return null;
 
-         var monitor = this.GetComponentInParent<EnemyDestructionMonitorScript>();
-         if (monitor == null)
+         EnemyDestructionMonitorScript monitor = null;
+         if (this._monitorForDestruction)
          {
-            Debug.LogError("Unable to find the enemy destruction monitor script", this);
-         }
-         else
-         {
-            var vehicles = this.GetComponentsInChildren(SimpleGroundVehicleScript.RealType);
-            for (int i = 0; i < vehicles.Length; i++)
+            monitor = this.GetComponentInParent<EnemyDestructionMonitorScript>();
+            if (monitor == null)
             {
-               var vehicle = new SimpleGroundVehicleScript(vehicles[i]);
-               monitor.AddObjective(vehicle);
-
-               vehicle._TargetVelocity = this._targetVelocity;
-               vehicle._Speed = 500f;
+               Debug.LogError("Unable to find the enemy destruction monitor script", this);
             }
+         }
+
+         var vehicles = SimpleGroundVehicleScript.GetComponentsInChildren(this);
+         for (int i = 0; i < vehicles.Length; i++)
+         {
+            var vehicle = vehicles[i];
+
+            if (monitor != null)
+            {
+               monitor.AddObjective(vehicle);
+            }
+
+            vehicle._TargetVelocity = this._targetVelocity;
+            vehicle._Speed = 500f;
          }
       }
    }
