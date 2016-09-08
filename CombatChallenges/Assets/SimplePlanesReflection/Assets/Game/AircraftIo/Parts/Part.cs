@@ -10,6 +10,8 @@
    {
       private static Property<int> _id = CreateProperty<int>("Id");
 
+      private static Property<List<int>> _materialIds = CreateProperty<List<int>>("MaterialIds");
+
       protected Part()
       {
       }
@@ -19,6 +21,14 @@
          get
          {
             return this.Get(_id);
+         }
+      }
+
+      public List<int> MaterialIds
+      {
+         get
+         {
+            return this.Get(_materialIds);
          }
       }
    }

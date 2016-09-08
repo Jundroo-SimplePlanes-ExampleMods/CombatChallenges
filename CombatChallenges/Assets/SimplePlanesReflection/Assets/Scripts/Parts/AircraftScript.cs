@@ -5,11 +5,12 @@
    using System.Linq;
    using System.Text;
    using Game.AircraftIo;
-   using UnityEngine;
 
    public partial class AircraftScript : MonoBehaviourProxyType<AircraftScript>
    {
       private static Property<object> _aircraft = CreateProperty<object>("Aircraft");
+
+      private static Property<object> _theme = CreateProperty<object>("Theme");
 
       protected AircraftScript()
       {
@@ -20,6 +21,14 @@
          get
          {
             return Aircraft.Wrap(this.Get(_aircraft));
+         }
+      }
+
+      public ThemeScript Theme
+      {
+         get
+         {
+            return ThemeScript.Wrap(this.Get(_theme));
          }
       }
    }

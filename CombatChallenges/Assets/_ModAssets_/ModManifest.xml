@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModManifest buildID="b2dd35e7-689e-4f81-99da-8431378dc07f">
-  <Mod name="Combat Challenges" author="Nathan" versionMajor="1" versionMinor="0" lastUpdated="9/3/2016 11:04:00 PM" apiVersion="1.0.0.0" description="A collection of combat based challenges.">
-    <Steam title="Combat Challenges" visibility="Public" previewPath="TODO" language="English" tags="Levels">
-      <description>A collection of combat based challenges.</description>
+<ModManifest buildID="a661f143-9117-4f59-beb6-b4828900718a">
+  <Mod name="Combat Challenges" author="Nathan" versionMajor="1" versionMinor="0" lastUpdated="9/8/2016 8:05:57 PM" apiVersion="1.0.0.0" description="A collection of combat based challenges.">
+    <Steam title="Combat Challenges" visibility="FriendsOnly" previewPath="Assets/Steam/SteamPreview.png" language="English" tags="Levels">
+      <description>A collection of combat based challenges.
+
+
+Full source code and Unity project are available here:
+https://github.com/Jundroo-SimplePlanes-ExampleMods/CombatChallenges</description>
     </Steam>
     <GameObjects>
       <GameObject name="BanditAnnihilationLevel" path="Assets/_ModAssets_/BanditAnnihilationLevel.prefab" />

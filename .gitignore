@@ -31,3 +31,6 @@ sysinfo.txt
 *.unitypackage
 /ModAssetBundles
 /.mdb
+/CombatChallenges/.mdb
+/CombatChallenges/Library
+/CombatChallenges/ModAssetBundles
