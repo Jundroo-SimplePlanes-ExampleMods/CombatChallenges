@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModManifest buildID="a661f143-9117-4f59-beb6-b4828900718a">
-  <Mod name="Combat Challenges" author="Nathan" versionMajor="1" versionMinor="0" lastUpdated="9/8/2016 8:05:57 PM" apiVersion="1.0.0.0" description="A collection of combat based challenges.">
+<ModManifest buildID="a3057cba-9885-4a0d-98ac-75735d830ce5">
+  <Mod name="Combat Challenges" author="Nathan" versionMajor="1" versionMinor="0" lastUpdated="9/13/2016 7:49:29 PM" apiVersion="1.0.0.0" description="A collection of combat based challenges.">
     <Steam title="Combat Challenges" visibility="FriendsOnly" previewPath="Assets/Steam/SteamPreview.png" language="English" tags="Levels">
       <description>A collection of combat based challenges.
 

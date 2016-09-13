@@ -1154,22 +1154,6 @@
             The load aircraft from clipboard URL input.
             </value>
         </member>
-        <member name="P:Jundroo.SimplePlanes.ModTools.Input.IGameInputs.MirrorPart">
-            <summary>
-            Gets the mirror part input.
-            </summary>
-            <value>
-            The mirror part input.
-            </value>
-        </member>
-        <member name="P:Jundroo.SimplePlanes.ModTools.Input.IGameInputs.MirrorTool">
-            <summary>
-            Gets the mirror tool input.
-            </summary>
-            <value>
-            The mirror tool input.
-            </value>
-        </member>
         <member name="P:Jundroo.SimplePlanes.ModTools.Input.IGameInputs.MirrorAircraftLeft">
             <summary>
             Gets the mirror aircraft left input.
@@ -1184,6 +1168,22 @@
             </summary>
             <value>
             The mirror aircraft right input.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.Input.IGameInputs.MirrorPart">
+            <summary>
+            Gets the mirror part input.
+            </summary>
+            <value>
+            The mirror part input.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.Input.IGameInputs.MirrorTool">
+            <summary>
+            Gets the mirror tool input.
+            </summary>
+            <value>
+            The mirror tool input.
             </value>
         </member>
         <member name="P:Jundroo.SimplePlanes.ModTools.Input.IGameInputs.NextTarget">
@@ -1312,6 +1312,22 @@
             </summary>
             <value>
             The redo input.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.Input.IGameInputs.Restart">
+            <summary>
+            Gets the restart input.
+            </summary>
+            <value>
+            The restart input.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.Input.IGameInputs.RestartHere">
+            <summary>
+            Gets the restart here input.
+            </summary>
+            <value>
+            The restart here input.
             </value>
         </member>
         <member name="P:Jundroo.SimplePlanes.ModTools.Input.IGameInputs.Roll">
@@ -3689,6 +3705,22 @@
             </summary>
             <value>
             The redo input.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.Mocks.GameInputsMock.Restart">
+            <summary>
+            Gets or sets the restart input.
+            </summary>
+            <value>
+            The restart input.
+            </value>
+        </member>
+        <member name="P:Jundroo.SimplePlanes.ModTools.Mocks.GameInputsMock.RestartHere">
+            <summary>
+            Gets or sets the restart here input.
+            </summary>
+            <value>
+            The restart here input.
             </value>
         </member>
         <member name="P:Jundroo.SimplePlanes.ModTools.Mocks.GameInputsMock.Roll">
