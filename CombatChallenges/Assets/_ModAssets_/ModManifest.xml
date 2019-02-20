@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ModManifest buildID="a3057cba-9885-4a0d-98ac-75735d830ce5">
-  <Mod name="Combat Challenges" author="Nathan" versionMajor="1" versionMinor="0" lastUpdated="9/13/2016 7:49:29 PM" apiVersion="1.0.0.0" description="A collection of combat based challenges.">
+<ModManifest buildID="9647fd9c-5794-4a41-8fd6-2da09812b1fb">
+  <Mod name="Combat Challenges" author="Nathan" versionMajor="1" versionMinor="0" loadPriority="1000" lastUpdated="2019-02-21T18:15:33.349503Z" apiVersion="1.0.0.0" description="A collection of combat based challenges.">
     <Steam title="Combat Challenges" visibility="FriendsOnly" previewPath="Assets/Steam/SteamPreview.png" language="English" tags="Levels">
       <description>A collection of combat based challenges.
 
@@ -22,6 +22,9 @@ https://github.com/Jundroo-SimplePlanes-ExampleMods/CombatChallenges</descriptio
     <Assets>
       <Asset path="Assets/Resources/Materials/EndZoneMaterial.mat" />
     </Assets>
+    <MaterialShaderMap>
+      <Material name="EndZoneMaterial" shader="Legacy Shaders/Particles/Alpha Blended" />
+    </MaterialShaderMap>
     <Assemblies>
       <Assembly name="CombatChallenges-Assembly-CSharp.dll" path="Assets/_ModAssets_/CombatChallenges-Assembly-CSharp.dll.bytes" isProjectAssembly="true" />
     </Assemblies>

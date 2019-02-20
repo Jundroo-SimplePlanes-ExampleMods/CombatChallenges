@@ -1,64 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &102390
+--- !u!1 &222131370
 GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
-  - 4: {fileID: 430892}
-  - 114: {fileID: 11492308}
-  - 114: {fileID: 11489142}
-  m_Layer: 0
-  m_Name: AATank1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &125428
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 402912}
-  - 114: {fileID: 11489904}
-  - 114: {fileID: 11438074}
-  m_Layer: 0
-  m_Name: Laser Defense Turret
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &126978
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 438186}
-  - 114: {fileID: 11416766}
-  m_Layer: 0
-  m_Name: SnowstoneBaseAssaultLevel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &132418
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 490806}
-  - 114: {fileID: 11413082}
+  - component: {fileID: 222131371}
+  - component: {fileID: 4222966749653949933}
   m_Layer: 0
   m_Name: ObjectiveTargets
   m_TagString: Untagged
@@ -66,16 +17,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &135164
+--- !u!4 &222131371
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222131370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1575632595}
+  - {fileID: 529439284}
+  m_Father: {fileID: 1564734972}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4222966749653949933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222131370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts: []
+  ObjectId: 1cfc3469-9bf7-403c-acf1-eb5767e374a3
+--- !u!1 &529439283
 GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
-  - 4: {fileID: 499584}
-  - 114: {fileID: 11474352}
-  - 114: {fileID: 11416170}
+  - component: {fileID: 529439284}
+  - component: {fileID: 529439285}
+  - component: {fileID: 6451473763719058525}
   m_Layer: 0
   m_Name: Missile Defense Base
   m_TagString: Untagged
@@ -83,32 +65,61 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &137828
+--- !u!4 &529439284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529439283}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 967838519}
+  - {fileID: 1830334301}
+  - {fileID: 1976841501}
+  - {fileID: 1517668797}
+  m_Father: {fileID: 222131371}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &529439285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529439283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1649248099, guid: 0ae1b6aafcdc6bc46b35491a5c18721e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _initiallyHostile: 1
+--- !u!114 &6451473763719058525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529439283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts: []
+  ObjectId: 5ca58a6c-2e3b-4172-9d0d-6f3878fbe6b3
+--- !u!1 &546066093
 GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
-  - 4: {fileID: 420884}
-  - 114: {fileID: 11469456}
-  - 114: {fileID: 11460064}
-  m_Layer: 0
-  m_Name: Missile Launcher
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &144274
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 451750}
-  - 114: {fileID: 11445830}
+  - component: {fileID: 546066094}
+  - component: {fileID: 6266779220141873824}
   m_Layer: 0
   m_Name: NonObjectiveTargets
   m_TagString: Untagged
@@ -116,33 +127,45 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &183938
+--- !u!4 &546066094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546066093}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1564734972}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6266779220141873824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546066093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts: []
+  ObjectId: 8f27c190-5496-41af-b91d-59799fb98252
+--- !u!1 &967838518
 GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
-  - 4: {fileID: 457654}
-  - 114: {fileID: 11498202}
-  - 114: {fileID: 11469112}
-  m_Layer: 0
-  m_Name: Laser Defense Turret
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &188034
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 475642}
-  - 114: {fileID: 11459934}
-  - 114: {fileID: 11497884}
+  - component: {fileID: 967838519}
+  - component: {fileID: 967838520}
+  - component: {fileID: 2299616531485889698}
   m_Layer: 0
   m_Name: Missile Launcher
   m_TagString: Untagged
@@ -150,163 +173,170 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &402912
+--- !u!4 &967838519
 Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125428}
-  m_LocalRotation: {x: 0, y: 0.07777546, z: 0, w: 0.9969709}
-  m_LocalPosition: {x: 9813.9, y: 1473, z: 3710}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 8.9214, z: 0}
-  m_Children: []
-  m_Father: {fileID: 499584}
-  m_RootOrder: 2
---- !u!4 &420884
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137828}
-  m_LocalRotation: {x: 0, y: 0.07777546, z: 0, w: 0.9969709}
-  m_LocalPosition: {x: 9811.8, y: 1446.42, z: 3739.2031}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 8.9214, z: 0}
-  m_Children: []
-  m_Father: {fileID: 499584}
-  m_RootOrder: 1
---- !u!4 &430892
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102390}
-  m_LocalRotation: {x: 0, y: 0.075875774, z: 0, w: 0.9971173}
-  m_LocalPosition: {x: 9767, y: 1475.9, z: 3666.5938}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 8.7031, z: 0}
-  m_Children: []
-  m_Father: {fileID: 490806}
-  m_RootOrder: 0
---- !u!4 &438186
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126978}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5500, y: -482.98, z: 127500}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 490806}
-  - {fileID: 451750}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!4 &451750
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144274}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 438186}
-  m_RootOrder: 1
---- !u!4 &457654
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183938}
-  m_LocalRotation: {x: 0, y: 0.07777546, z: 0, w: 0.9969709}
-  m_LocalPosition: {x: 9737.3, y: 1473, z: 3722}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 8.9214, z: 0}
-  m_Children: []
-  m_Father: {fileID: 499584}
-  m_RootOrder: 3
---- !u!4 &475642
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188034}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967838518}
   m_LocalRotation: {x: 0, y: 0.07777546, z: 0, w: 0.9969709}
   m_LocalPosition: {x: 9745.9, y: 1446.42, z: 3749.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 8.9214, z: 0}
   m_Children: []
-  m_Father: {fileID: 499584}
+  m_Father: {fileID: 529439284}
   m_RootOrder: 0
---- !u!4 &490806
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132418}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 430892}
-  - {fileID: 499584}
-  m_Father: {fileID: 438186}
-  m_RootOrder: 0
---- !u!4 &499584
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135164}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 475642}
-  - {fileID: 420884}
-  - {fileID: 402912}
-  - {fileID: 457654}
-  m_Father: {fileID: 490806}
-  m_RootOrder: 1
---- !u!114 &11413082
+  m_LocalEulerAnglesHint: {x: 0, y: 8.9214, z: 0}
+--- !u!114 &967838520
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 132418}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967838518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 635986843, guid: 0ae1b6aafcdc6bc46b35491a5c18721e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _horizontalRotationMax: 180
+  _horizontalRotationMin: -180
+  _horizontalRotationRate: 120
+  _maxRange: 7000
+  _verticalRotationMax: 5
+  _verticalRotationMin: -90
+  _verticalRotationRate: 120
+  _infiniteAmmo: 0
+  _lockAlertTime: 4
+  _maxMissileLockAngle: 15
+  _minRange: 100
+  _missileAccuracy: 0.7
+  _missileFireDelay: 10
+  _missileFireDelayRandomExtraTime: 2
+  _missileMaxSpeed: 600
+--- !u!114 &2299616531485889698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 967838518}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CustomScripts: []
-  ObjectId: 75b0b5c8-7fbb-4ae6-a5d7-295abaf64e3f
---- !u!114 &11416170
+  ObjectId: 36cae491-509b-4709-835d-649a4e120f86
+--- !u!1 &1517668796
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1517668797}
+  - component: {fileID: 1517668798}
+  - component: {fileID: 962826579642676869}
+  m_Layer: 0
+  m_Name: Laser Defense Turret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1517668797
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517668796}
+  m_LocalRotation: {x: 0, y: 0.07777546, z: 0, w: 0.9969709}
+  m_LocalPosition: {x: 9737.3, y: 1473, z: 3722}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 529439284}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 8.9214, z: 0}
+--- !u!114 &1517668798
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135164}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517668796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2098275504, guid: 0ae1b6aafcdc6bc46b35491a5c18721e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _horizontalRotationMax: 180
+  _horizontalRotationMin: -180
+  _horizontalRotationRate: 360
+  _maxRange: 5000
+  _verticalRotationMax: 30
+  _verticalRotationMin: -90
+  _verticalRotationRate: 360
+  _lockTimeAcquirePercentage: 0.25
+  _maxLockAngle: 5
+  _requiredLockTime: 3
+  _requiredRocketLockTime: 1
+--- !u!114 &962826579642676869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517668796}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CustomScripts: []
-  ObjectId: 78f6fcfc-3220-45f4-bd6f-69dd48d15427
---- !u!114 &11416766
+  ObjectId: 9036cb8b-5b3e-40c3-8f8e-c372ff6c724a
+--- !u!1 &1564734970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564734972}
+  - component: {fileID: 4708515837935264521}
+  m_Layer: 0
+  m_Name: SnowstoneBaseAssaultLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1564734972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564734970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5500, y: -482.98, z: 127500}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 222131371}
+  - {fileID: 546066094}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4708515837935264521
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126978}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564734970}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -314,192 +344,181 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700c030000001d4a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c7305010000003a4173736574732e536372697074732e4c6576656c732e436f6d6d6f6e2e456e656d794465737472756374696f6e4d6f6e69746f72536372697074040000000f4973526f6f74436f6d706f6e656e740f5f6f626a65637469766553686970730f5f6f626a65637469766554616e6b73115f6f626a656374697665547572726574730004040401374a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e5368697050726f78795b5d03000000434a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f78795b5d03000000414a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e67576561706f6e50726f78795b5d030000000200000001090400000009050000000906000000070400000000010000000000000004354a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e5368697050726f787903000000070500000000010000000100000004414a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f78790300000009070000000706000000000100000004000000043f4a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e67576561706f6e50726f78790300000009080000000909000000090a000000090b0000000507000000414a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f7879040000000f4973526f6f74436f6d706f6e656e74084861734572726f72084f626a65637449640d436f6d706f6e656e7454797065000001010101030000000000060c0000002466666437633131322d393633342d346139352d393237392d333965353165623431663764060d00000097014a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f78792c204a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0508000000484a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674d697373696c654c61756e6368657250726f7879040000000f4973526f6f74436f6d706f6e656e74084861734572726f72084f626a65637449640d436f6d706f6e656e7454797065000001010101030000000000060e0000002432643834363361612d646665342d346266332d623230642d343430333632333438306666060f0000009e014a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674d697373696c654c61756e6368657250726f78792c204a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c010900000008000000000006100000002438363461303839322d636334612d346463342d616563632d33326562636461316665643706110000009e014a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674d697373696c654c61756e6368657250726f78792c204a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c050a000000454a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674c61736572446566656e736550726f7879040000000f4973526f6f74436f6d706f6e656e74084861734572726f72084f626a65637449640d436f6d706f6e656e745479706500000101010103000000000006120000002465343166383961322d623133372d343932342d393731622d36373733353466623233386606130000009b014a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674c61736572446566656e736550726f78792c204a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c010b0000000a000000000006140000002436653238333866392d336632332d346361342d623130642d38646133626433303062623006150000009b014a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674c61736572446566656e736550726f78792c204a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0c03000000544a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c05010000003a4173736574732e536372697074732e4c6576656c732e436f6d6d6f6e2e456e656d794465737472756374696f6e4d6f6e69746f72536372697074040000000f4973526f6f74436f6d706f6e656e740f5f6f626a65637469766553686970730f5f6f626a65637469766554616e6b73115f6f626a656374697665547572726574730004040401374a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e5368697050726f78795b5d03000000434a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f78795b5d03000000414a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e67576561706f6e50726f78795b5d030000000200000001090400000009050000000906000000070400000000010000000000000004354a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e5368697050726f787903000000070500000000010000000100000004414a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f78790300000009070000000706000000000100000004000000043f4a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e67576561706f6e50726f78790300000009080000000909000000090a000000090b0000000507000000414a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f7879040000000f4973526f6f74436f6d706f6e656e74084861734572726f72084f626a65637449640d436f6d706f6e656e7454797065000001010101030000000000060c0000002433383438353038632d333331612d343336342d623234342d653762646632653166333135060d00000097014a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f78792c204a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0508000000484a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674d697373696c654c61756e6368657250726f7879040000000f4973526f6f74436f6d706f6e656e74084861734572726f72084f626a65637449640d436f6d706f6e656e7454797065000001010101030000000000060e0000002433366361653439312d353039622d343730392d383335642d363439613465313230663836060f0000009e014a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674d697373696c654c61756e6368657250726f78792c204a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c010900000008000000000006100000002431623633373533332d386363662d346335652d623530662d36633635373965313961653906110000009e014a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674d697373696c654c61756e6368657250726f78792c204a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c050a000000454a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674c61736572446566656e736550726f7879040000000f4973526f6f74436f6d706f6e656e74084861734572726f72084f626a65637449640d436f6d706f6e656e745479706500000101010103000000000006120000002432313839613039622d363934322d346231612d623332322d39636663616536613030656406130000009b014a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674c61736572446566656e736550726f78792c204a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c010b0000000a000000000006140000002439303336636238622d356233652d343063332d386638652d63333732666636633732346106150000009b014a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e674c61736572446566656e736550726f78792c204a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0b
     ScriptType: Assets.Scripts.Levels.Common.EnemyDestructionMonitorScript, CombatChallenges-Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: ed1d7242-8a63-471c-8a41-ed4172a810ff
---- !u!114 &11438074
+  ObjectId: 5e1ba7e8-c9af-4e87-9997-9b4a7a1906e2
+--- !u!1 &1575632594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1575632595}
+  - component: {fileID: 1575632596}
+  - component: {fileID: 8259654629328991145}
+  m_Layer: 0
+  m_Name: AATank1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1575632595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575632594}
+  m_LocalRotation: {x: 0, y: 0.075875774, z: 0, w: 0.9971173}
+  m_LocalPosition: {x: 9767, y: 1475.9, z: 3666.5938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 222131371}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 8.7031, z: 0}
+--- !u!114 &1575632596
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts: []
-  ObjectId: e41f89a2-b137-4924-971b-677354fb238f
---- !u!114 &11445830
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 144274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts: []
-  ObjectId: 3215f1ed-bdee-4c7a-b60b-3183e0b449ff
---- !u!114 &11459934
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 635986843, guid: 0ae1b6aafcdc6bc46b35491a5c18721e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _horizontalRotationMax: 180
-  _horizontalRotationMin: -180
-  _horizontalRotationRate: 120
-  _maxRange: 7000
-  _verticalRotationMax: 5
-  _verticalRotationMin: -90
-  _verticalRotationRate: 120
-  _infiniteAmmo: 0
-  _lockAlertTime: 4
-  _maxMissileLockAngle: 15
-  _minRange: 100
-  _missileAccuracy: 0.7
-  _missileFireDelay: 10
-  _missileFireDelayRandomExtraTime: 2
-  _missileMaxSpeed: 600
---- !u!114 &11460064
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts: []
-  ObjectId: 864a0892-cc4a-4dc4-aecc-32ebcda1fed7
---- !u!114 &11469112
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts: []
-  ObjectId: 6e2838f9-3f23-4ca4-b10d-8da3bd300bb0
---- !u!114 &11469456
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 137828}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 635986843, guid: 0ae1b6aafcdc6bc46b35491a5c18721e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _horizontalRotationMax: 180
-  _horizontalRotationMin: -180
-  _horizontalRotationRate: 120
-  _maxRange: 7000
-  _verticalRotationMax: 5
-  _verticalRotationMin: -90
-  _verticalRotationRate: 120
-  _infiniteAmmo: 0
-  _lockAlertTime: 4
-  _maxMissileLockAngle: 15
-  _minRange: 100
-  _missileAccuracy: 0.7
-  _missileFireDelay: 10
-  _missileFireDelayRandomExtraTime: 2
-  _missileMaxSpeed: 600
---- !u!114 &11474352
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 135164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1649248099, guid: 0ae1b6aafcdc6bc46b35491a5c18721e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _initiallyHostile: 1
---- !u!114 &11489142
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts: []
-  ObjectId: ffd7c112-9634-4a95-9279-39e51eb41f7d
---- !u!114 &11489904
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 125428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2098275504, guid: 0ae1b6aafcdc6bc46b35491a5c18721e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _horizontalRotationMax: 180
-  _horizontalRotationMin: -180
-  _horizontalRotationRate: 360
-  _maxRange: 5000
-  _verticalRotationMax: 30
-  _verticalRotationMin: -90
-  _verticalRotationRate: 360
-  _lockTimeAcquirePercentage: 0.25
-  _maxLockAngle: 5
-  _requiredLockTime: 3
-  _requiredRocketLockTime: 1
---- !u!114 &11492308
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 102390}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575632594}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 2113933590, guid: 0ae1b6aafcdc6bc46b35491a5c18721e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _initiallyHostile: 1
---- !u!114 &11497884
+--- !u!114 &8259654629328991145
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 188034}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575632594}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CustomScripts: []
-  ObjectId: 2d8463aa-dfe4-4bf3-b20d-4403623480ff
---- !u!114 &11498202
+  ObjectId: 3848508c-331a-4364-b244-e7bdf2e1f315
+--- !u!1 &1830334300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1830334301}
+  - component: {fileID: 1830334302}
+  - component: {fileID: 3903756461251534773}
+  m_Layer: 0
+  m_Name: Missile Launcher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1830334301
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830334300}
+  m_LocalRotation: {x: 0, y: 0.07777546, z: 0, w: 0.9969709}
+  m_LocalPosition: {x: 9811.8, y: 1446.42, z: 3739.2031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 529439284}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 8.9214, z: 0}
+--- !u!114 &1830334302
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183938}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830334300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 635986843, guid: 0ae1b6aafcdc6bc46b35491a5c18721e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _horizontalRotationMax: 180
+  _horizontalRotationMin: -180
+  _horizontalRotationRate: 120
+  _maxRange: 7000
+  _verticalRotationMax: 5
+  _verticalRotationMin: -90
+  _verticalRotationRate: 120
+  _infiniteAmmo: 0
+  _lockAlertTime: 4
+  _maxMissileLockAngle: 15
+  _minRange: 100
+  _missileAccuracy: 0.7
+  _missileFireDelay: 10
+  _missileFireDelayRandomExtraTime: 2
+  _missileMaxSpeed: 600
+--- !u!114 &3903756461251534773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830334300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts: []
+  ObjectId: 1b637533-8ccf-4c5e-b50f-6c6579e19ae9
+--- !u!1 &1976841500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1976841501}
+  - component: {fileID: 1976841502}
+  - component: {fileID: 6501480838634375553}
+  m_Layer: 0
+  m_Name: Laser Defense Turret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1976841501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976841500}
+  m_LocalRotation: {x: 0, y: 0.07777546, z: 0, w: 0.9969709}
+  m_LocalPosition: {x: 9813.9, y: 1473, z: 3710}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 529439284}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 8.9214, z: 0}
+--- !u!114 &1976841502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976841500}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -2098275504, guid: 0ae1b6aafcdc6bc46b35491a5c18721e, type: 3}
@@ -516,14 +535,17 @@ MonoBehaviour:
   _maxLockAngle: 5
   _requiredLockTime: 3
   _requiredRocketLockTime: 1
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 126978}
-  m_IsPrefabParent: 1
+--- !u!114 &6501480838634375553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1976841500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts: []
+  ObjectId: 2189a09b-6942-4b1a-b322-9cfcae6a00ed

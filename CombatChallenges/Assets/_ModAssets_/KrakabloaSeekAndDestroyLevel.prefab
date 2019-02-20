@@ -1,14 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &105812
+--- !u!1 &29703466
 GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
-  - 4: {fileID: 438432}
-  - 114: {fileID: 11412968}
+  - component: {fileID: 29703467}
+  - component: {fileID: 5581497237680559523}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
@@ -16,15 +17,48 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &106996
+--- !u!4 &29703467
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29703466}
+  m_LocalRotation: {x: 0, y: 0.2190903, z: 0, w: -0.9757046}
+  m_LocalPosition: {x: 4272.97, y: 962.81, z: 7983.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 334.68878, z: 0}
+--- !u!114 &5581497237680559523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29703466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: f8ace879-58a9-432c-8ed4-9a49cf7e57a7
+--- !u!1 &69617082
 GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
-  - 4: {fileID: 485046}
-  - 114: {fileID: 11485366}
+  - component: {fileID: 69617083}
+  - component: {fileID: 1215822220434324628}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
@@ -32,47 +66,48 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &107306
+--- !u!4 &69617083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69617082}
+  m_LocalRotation: {x: 0, y: 0.3463364, z: 0, w: 0.9381104}
+  m_LocalPosition: {x: 763.05, y: 786.03, z: 6666.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 40.5268, z: 0}
+--- !u!114 &1215822220434324628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69617082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: c73779f2-a8c8-492b-a4f4-cab266c3dea9
+--- !u!1 &79321485
 GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
   m_Component:
-  - 4: {fileID: 474308}
-  - 114: {fileID: 11492116}
-  m_Layer: 0
-  m_Name: KrakabloaSeekAndDestroyLevel
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &109216
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 468314}
-  - 114: {fileID: 11473832}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &111036
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 496490}
-  - 114: {fileID: 11421026}
+  - component: {fileID: 79321486}
+  - component: {fileID: 3968131887380174012}
   m_Layer: 0
   m_Name: SpawnPoints
   m_TagString: Untagged
@@ -80,1297 +115,110 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &114844
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 466058}
-  - 114: {fileID: 11453588}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &117942
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 454950}
-  - 114: {fileID: 11487808}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &124966
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 425432}
-  - 114: {fileID: 11428268}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &130184
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 451006}
-  - 114: {fileID: 11427204}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &130986
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 421694}
-  - 114: {fileID: 11429066}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &133760
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 462156}
-  - 114: {fileID: 11454452}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &138522
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 440096}
-  - 114: {fileID: 11457806}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &139074
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 488274}
-  - 114: {fileID: 11474696}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &140778
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 450082}
-  - 114: {fileID: 11490202}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &141328
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 422868}
-  - 114: {fileID: 11455684}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &142094
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 461720}
-  - 114: {fileID: 11426078}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &142856
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 418770}
-  - 114: {fileID: 11437746}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &143578
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 406466}
-  - 114: {fileID: 11428252}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &145632
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 445362}
-  - 114: {fileID: 11411498}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &147092
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 432128}
-  - 114: {fileID: 11410304}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &152818
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 401834}
-  - 114: {fileID: 11427896}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &153724
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 475704}
-  - 114: {fileID: 11425848}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &154518
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 478186}
-  - 114: {fileID: 11410106}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &155420
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 489010}
-  - 114: {fileID: 11467582}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &155568
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 418032}
-  - 114: {fileID: 11435330}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &157134
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 455278}
-  - 114: {fileID: 11458466}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &166582
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 481646}
-  - 114: {fileID: 11456406}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &168590
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 449928}
-  - 114: {fileID: 11489382}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &170300
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 428808}
-  - 114: {fileID: 11486250}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &172632
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 421456}
-  - 114: {fileID: 11491260}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &174864
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 417174}
-  - 114: {fileID: 11447664}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &180332
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 445204}
-  - 114: {fileID: 11419288}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &181896
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 408292}
-  - 114: {fileID: 11410982}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &183346
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 469590}
-  - 114: {fileID: 11437078}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &184262
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 407606}
-  - 114: {fileID: 11405114}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &189196
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 474078}
-  - 114: {fileID: 11400978}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &190542
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 433486}
-  - 114: {fileID: 11419680}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &192290
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 487098}
-  - 114: {fileID: 11430768}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &193352
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 446326}
-  - 114: {fileID: 11493768}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &198442
-GameObject:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 424946}
-  - 114: {fileID: 11445740}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &401834
+--- !u!4 &79321486
 Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 152818}
-  m_LocalRotation: {x: 0, y: -0.85976, z: 0, w: -0.5106984}
-  m_LocalPosition: {x: 6500.19, y: 1002.52, z: 10100.72}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 478.57928, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 29
---- !u!4 &406466
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143578}
-  m_LocalRotation: {x: 0, y: 0.7036877, z: 0, w: -0.7105094}
-  m_LocalPosition: {x: 6620.72, y: 998.56, z: 3779.45}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 270.5528, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 22
---- !u!4 &407606
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184262}
-  m_LocalRotation: {x: 0, y: 0.60037434, z: 0, w: -0.7997191}
-  m_LocalPosition: {x: 8364.31, y: 1000.96, z: 11000.39}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 286.2066, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 32
---- !u!4 &408292
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181896}
-  m_LocalRotation: {x: 0, y: 0.87626135, z: 0, w: 0.4818362}
-  m_LocalPosition: {x: 11793.9, y: 668.9, z: 8067.8984}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 122.3892, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 17
---- !u!4 &417174
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 174864}
-  m_LocalRotation: {x: 0, y: -0.14588869, z: 0, w: 0.989301}
-  m_LocalPosition: {x: 1146.42, y: 677.22, z: 5488.54}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: -16.7775, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 10
---- !u!4 &418032
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155568}
-  m_LocalRotation: {x: 0, y: 0.04496327, z: 0, w: -0.9989887}
-  m_LocalPosition: {x: 7035.6797, y: 2997.5, z: 6926.6484}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: -5.1541, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 34
---- !u!4 &418770
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142856}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1830.92, y: 985.12, z: 2950.53}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 9
---- !u!4 &421456
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172632}
-  m_LocalRotation: {x: 0.0000001322478, y: 0.9961947, z: 0.000000011525116, w: -0.08715589}
-  m_LocalPosition: {x: 12904.801, y: 673.64, z: 2321.8008}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: -170, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 0
---- !u!4 &421694
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130986}
-  m_LocalRotation: {x: 0, y: 0.9570001, z: 0, w: -0.2900877}
-  m_LocalPosition: {x: 6133.18, y: 1004.15, z: 5126.3}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 213.7264, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 21
---- !u!4 &422868
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141328}
-  m_LocalRotation: {x: 0, y: -0.34380993, z: 0, w: 0.9390393}
-  m_LocalPosition: {x: 8043.4004, y: 690, z: 683.60156}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: -40.2184, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 3
---- !u!4 &424946
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 198442}
-  m_LocalRotation: {x: 0, y: -0.92852724, z: 0, w: 0.37126425}
-  m_LocalPosition: {x: 8176.49, y: 2225.15, z: 6456.3906}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: -136.4128, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 37
---- !u!4 &425432
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124966}
-  m_LocalRotation: {x: 0, y: 0.95068336, z: 0, w: -0.31016323}
-  m_LocalPosition: {x: 9867.39, y: 992.02, z: 5243.93}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 216.13809, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 19
---- !u!4 &428808
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170300}
-  m_LocalRotation: {x: 0, y: 0.7913716, z: 0, w: 0.6113355}
-  m_LocalPosition: {x: 3848.0996, y: 866.94, z: 1149.8984}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 104.6278, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 7
---- !u!4 &432128
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147092}
-  m_LocalRotation: {x: 0, y: 0.47540197, z: 0, w: 0.8797687}
-  m_LocalPosition: {x: 8917.969, y: 696.37, z: 1305.3008}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 56.7711, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 4
---- !u!4 &433486
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190542}
-  m_LocalRotation: {x: 0, y: -0.272786, z: 0, w: -0.96207476}
-  m_LocalPosition: {x: 5633.83, y: 973.6, z: 9288.539}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 391.6602, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 28
---- !u!4 &438432
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105812}
-  m_LocalRotation: {x: 0, y: -0.45726332, z: 0, w: -0.8893314}
-  m_LocalPosition: {x: 9491.719, y: 999.9, z: 10084.68}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 414.4213, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 31
---- !u!4 &440096
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138522}
-  m_LocalRotation: {x: 0, y: 0.97803056, z: 0, w: 0.20846182}
-  m_LocalPosition: {x: 2236, y: 842.39, z: 11915}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 155.9356, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 15
---- !u!4 &445204
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 180332}
-  m_LocalRotation: {x: 0, y: 0.61250293, z: 0, w: 0.7904684}
-  m_LocalPosition: {x: 10050.15, y: 760, z: 845.89844}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 75.5414, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 1
---- !u!4 &445362
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145632}
-  m_LocalRotation: {x: 0, y: 0.86137986, z: 0, w: 0.50796145}
-  m_LocalPosition: {x: 10198.1, y: 1011.3, z: 6597.1016}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 118.943695, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 18
---- !u!4 &446326
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193352}
-  m_LocalRotation: {x: 0, y: -0.92852724, z: 0, w: 0.37126425}
-  m_LocalPosition: {x: 8176.49, y: 2225.15, z: 6456.3906}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: -136.4128, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 35
---- !u!4 &449928
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168590}
-  m_LocalRotation: {x: 0, y: 0.32815427, z: 0, w: 0.9446242}
-  m_LocalPosition: {x: 5196.121, y: 868.4, z: 1172.4297}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 38.3136, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 6
---- !u!4 &450082
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140778}
-  m_LocalRotation: {x: 0, y: 0.36714402, z: 0, w: 0.93016416}
-  m_LocalPosition: {x: 7159.0996, y: 2996.08, z: 7421.3984}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 43.0792, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 33
---- !u!4 &451006
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130184}
-  m_LocalRotation: {x: 0, y: 0.24281338, z: 0, w: 0.97007304}
-  m_LocalPosition: {x: 2520.9102, y: 1078.46, z: 2130.2812}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 28.105299, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 8
---- !u!4 &454950
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117942}
-  m_LocalRotation: {x: 0, y: 0.9645097, z: 0, w: -0.2640474}
-  m_LocalPosition: {x: 9024, y: 943.79, z: 3935.6016}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 210.6207, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 23
---- !u!4 &455278
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157134}
-  m_LocalRotation: {x: 0, y: 0.4166134, z: 0, w: 0.9090838}
-  m_LocalPosition: {x: 5837.17, y: 730.5, z: 969.55}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 49.241898, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 5
---- !u!4 &461720
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142094}
-  m_LocalRotation: {x: 0, y: 0.12786189, z: 0, w: -0.991792}
-  m_LocalPosition: {x: 4433.379, y: 1036.4, z: 6064.1914}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 345.3079, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 26
---- !u!4 &462156
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133760}
-  m_LocalRotation: {x: 0, y: 0.8427234, z: 0, w: 0.5383468}
-  m_LocalPosition: {x: 1735, y: 841.38, z: 11266}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 114.8577, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 14
---- !u!4 &466058
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114844}
-  m_LocalRotation: {x: 0, y: 0.6719519, z: 0, w: -0.74059486}
-  m_LocalPosition: {x: 7883.69, y: 939.64, z: 3563.17}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 275.56418, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 24
---- !u!4 &468314
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109216}
-  m_LocalRotation: {x: 0, y: -0.93192357, z: 0, w: 0.36265492}
-  m_LocalPosition: {x: 5959.32, y: 2129.27, z: 8240.37}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: -137.4733, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 36
---- !u!4 &469590
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183346}
-  m_LocalRotation: {x: 0, y: 0.22663003, z: 0, w: 0.97398096}
-  m_LocalPosition: {x: 11052.801, y: 675.3, z: 1267}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 26.1975, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 2
---- !u!4 &474078
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189196}
-  m_LocalRotation: {x: 0, y: 0.912452, z: 0, w: 0.40918374}
-  m_LocalPosition: {x: 1567.7002, y: 839.63, z: 10468}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 131.6929, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 13
---- !u!4 &474308
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 107306}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12500, y: -654, z: 47500}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_Children:
-  - {fileID: 496490}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
---- !u!4 &475704
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153724}
-  m_LocalRotation: {x: 0, y: 0.7908296, z: 0, w: -0.61203647}
-  m_LocalPosition: {x: 8262, y: 1010.6, z: 5014}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 255.4738, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 20
---- !u!4 &478186
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154518}
-  m_LocalRotation: {x: 0, y: -0.808574, z: 0, w: -0.5883945}
-  m_LocalPosition: {x: 7753.2793, y: 1123.97, z: 9267.559}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 467.9137, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 30
---- !u!4 &481646
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166582}
-  m_LocalRotation: {x: 0, y: 0.9363792, z: 0, w: 0.35099003}
-  m_LocalPosition: {x: 4018.4004, y: 980.73, z: 12156.5}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 138.90419, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 16
---- !u!4 &485046
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106996}
-  m_LocalRotation: {x: 0, y: 0.8668965, z: 0, w: 0.4984883}
-  m_LocalPosition: {x: 8751.5, y: 683, z: 2378.3984}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 120.1999, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 25
---- !u!4 &487098
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192290}
-  m_LocalRotation: {x: 0, y: 0.9861054, z: 0, w: 0.16612121}
-  m_LocalPosition: {x: 888.00977, y: 724.82, z: 8641.328}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 160.87529, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 12
---- !u!4 &488274
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139074}
-  m_LocalRotation: {x: 0, y: 0.2190903, z: 0, w: -0.9757046}
-  m_LocalPosition: {x: 4272.97, y: 962.81, z: 7983.19}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 334.68878, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 27
---- !u!4 &489010
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155420}
-  m_LocalRotation: {x: 0, y: 0.3463364, z: 0, w: 0.9381104}
-  m_LocalPosition: {x: 763.05, y: 786.03, z: 6666.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 40.5268, z: 0}
-  m_Children: []
-  m_Father: {fileID: 496490}
-  m_RootOrder: 11
---- !u!4 &496490
-Transform:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 111036}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79321485}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 421456}
-  - {fileID: 445204}
-  - {fileID: 469590}
-  - {fileID: 422868}
-  - {fileID: 432128}
-  - {fileID: 455278}
-  - {fileID: 449928}
-  - {fileID: 428808}
-  - {fileID: 451006}
-  - {fileID: 418770}
-  - {fileID: 417174}
-  - {fileID: 489010}
-  - {fileID: 487098}
-  - {fileID: 474078}
-  - {fileID: 462156}
-  - {fileID: 440096}
-  - {fileID: 481646}
-  - {fileID: 408292}
-  - {fileID: 445362}
-  - {fileID: 425432}
-  - {fileID: 475704}
-  - {fileID: 421694}
-  - {fileID: 406466}
-  - {fileID: 454950}
-  - {fileID: 466058}
-  - {fileID: 485046}
-  - {fileID: 461720}
-  - {fileID: 488274}
-  - {fileID: 433486}
-  - {fileID: 401834}
-  - {fileID: 478186}
-  - {fileID: 438432}
-  - {fileID: 407606}
-  - {fileID: 450082}
-  - {fileID: 418032}
-  - {fileID: 446326}
-  - {fileID: 468314}
-  - {fileID: 424946}
-  m_Father: {fileID: 474308}
+  - {fileID: 1950404749}
+  - {fileID: 123480141}
+  - {fileID: 1927988893}
+  - {fileID: 2034652380}
+  - {fileID: 1364186026}
+  - {fileID: 601543471}
+  - {fileID: 120685254}
+  - {fileID: 1006802040}
+  - {fileID: 171907872}
+  - {fileID: 2096826004}
+  - {fileID: 285561276}
+  - {fileID: 69617083}
+  - {fileID: 1274521764}
+  - {fileID: 1151674079}
+  - {fileID: 694655528}
+  - {fileID: 453673614}
+  - {fileID: 159435699}
+  - {fileID: 98377300}
+  - {fileID: 1866181792}
+  - {fileID: 1734260944}
+  - {fileID: 326366303}
+  - {fileID: 1829823369}
+  - {fileID: 348362207}
+  - {fileID: 1650644841}
+  - {fileID: 1256628084}
+  - {fileID: 727342609}
+  - {fileID: 853053940}
+  - {fileID: 29703467}
+  - {fileID: 1834058114}
+  - {fileID: 1560838763}
+  - {fileID: 2147060468}
+  - {fileID: 458238856}
+  - {fileID: 887021884}
+  - {fileID: 1112773114}
+  - {fileID: 1217511785}
+  - {fileID: 1389346251}
+  - {fileID: 1747180300}
+  - {fileID: 717492611}
+  m_Father: {fileID: 1564734972}
   m_RootOrder: 0
---- !u!114 &11400978
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3968131887380174012
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 189196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 6b5a9d70-9511-46b8-b6af-a2d90d3ac774
---- !u!114 &11405114
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 6e107565-c60e-4e91-a6bb-897838cebd81
---- !u!114 &11410106
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 154518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 5d08ed68-128d-476f-aee5-67360eba905b
---- !u!114 &11410304
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 8cd39de5-a4f6-4dd4-a0a1-a04caa70f160
---- !u!114 &11410982
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 181896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 018d5ce0-044f-488f-a845-05fe628eee90
---- !u!114 &11411498
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 145632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 7a96a468-ce52-406a-83ed-89897e89d18f
---- !u!114 &11412968
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 105812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 22c7adbe-f1d8-4a23-8f3b-4bb41ca5c88b
---- !u!114 &11419288
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 180332}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 96440c35-b89c-454c-aea0-d6167018d0e3
---- !u!114 &11419680
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 190542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 22da60da-9b11-45d4-abb8-619eca9b51a5
---- !u!114 &11421026
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 111036}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 79321485}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CustomScripts: []
-  ObjectId: 45429f58-9149-4f1a-b34e-37a2683a715a
---- !u!114 &11425848
+  ObjectId: 5e3fcc39-07c3-465d-97b3-f5ee99d5f66e
+--- !u!1 &98377299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 98377300}
+  - component: {fileID: 6409144927188189949}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &98377300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98377299}
+  m_LocalRotation: {x: 0, y: 0.87626135, z: 0, w: 0.4818362}
+  m_LocalPosition: {x: 11793.9, y: 668.9, z: 8067.8984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 122.3892, z: 0}
+--- !u!114 &6409144927188189949
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 153724}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 98377299}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1378,16 +226,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 951f3628-98a8-4d4c-bda9-c543a6077205
---- !u!114 &11426078
+  ObjectId: 2942cf33-f005-4a32-a805-76b115735ad4
+--- !u!1 &120685253
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 120685254}
+  - component: {fileID: 4745679626059678556}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &120685254
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120685253}
+  m_LocalRotation: {x: 0, y: 0.32815427, z: 0, w: 0.9446242}
+  m_LocalPosition: {x: 5196.121, y: 868.4, z: 1172.4297}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 38.3136, z: 0}
+--- !u!114 &4745679626059678556
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142094}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120685253}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1395,16 +275,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 701e34de-dc09-4bde-8588-abe5b813c363
---- !u!114 &11427204
+  ObjectId: 1f4de15f-182b-477b-915d-96921616c54a
+--- !u!1 &123480140
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 123480141}
+  - component: {fileID: 4028849034291527020}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &123480141
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123480140}
+  m_LocalRotation: {x: 0, y: 0.61250293, z: 0, w: 0.7904684}
+  m_LocalPosition: {x: 10050.15, y: 760, z: 845.89844}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 75.5414, z: 0}
+--- !u!114 &4028849034291527020
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130184}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123480140}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1412,16 +324,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 667b5b8b-7b4e-4a95-984b-499f056b8f86
---- !u!114 &11427896
+  ObjectId: 596e85f5-fefb-4786-ba9b-80d4f115ebd3
+--- !u!1 &159435698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159435699}
+  - component: {fileID: 2198635875613266751}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &159435699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159435698}
+  m_LocalRotation: {x: 0, y: 0.9363792, z: 0, w: 0.35099003}
+  m_LocalPosition: {x: 4018.4004, y: 980.73, z: 12156.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 16
+  m_LocalEulerAnglesHint: {x: 0, y: 138.90419, z: 0}
+--- !u!114 &2198635875613266751
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 152818}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159435698}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1429,16 +373,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 4c175c9e-3e2a-4777-90e0-c4641dc158dc
---- !u!114 &11428252
+  ObjectId: db4c2731-c087-4c63-a6cd-ec9a18047811
+--- !u!1 &171907871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 171907872}
+  - component: {fileID: 1472963153999325086}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &171907872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171907871}
+  m_LocalRotation: {x: 0, y: 0.24281338, z: 0, w: 0.97007304}
+  m_LocalPosition: {x: 2520.9102, y: 1078.46, z: 2130.2812}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 28.105299, z: 0}
+--- !u!114 &1472963153999325086
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 143578}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171907871}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1446,16 +422,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: f6e625fc-5bca-481a-868d-b2502866dcdb
---- !u!114 &11428268
+  ObjectId: c3cbb675-1aeb-49bb-bed4-166c4460cf8f
+--- !u!1 &285561275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 285561276}
+  - component: {fileID: 7995165217210003632}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &285561276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285561275}
+  m_LocalRotation: {x: 0, y: -0.14588869, z: 0, w: 0.989301}
+  m_LocalPosition: {x: 1146.42, y: 677.22, z: 5488.54}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: -16.7775, z: 0}
+--- !u!114 &7995165217210003632
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 124966}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 285561275}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1463,16 +471,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: a1d66a01-7588-438f-9eb2-a9688873d2b3
---- !u!114 &11429066
+  ObjectId: 9a8b4c69-6726-4a58-855c-3fa320de99d2
+--- !u!1 &326366302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 326366303}
+  - component: {fileID: 8618225058188747089}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &326366303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326366302}
+  m_LocalRotation: {x: 0, y: 0.7908296, z: 0, w: -0.61203647}
+  m_LocalPosition: {x: 8262, y: 1010.6, z: 5014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 255.4738, z: 0}
+--- !u!114 &8618225058188747089
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 130986}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 326366302}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1480,16 +520,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 6aa933dd-2f95-4045-9c8f-1dbf014ea802
---- !u!114 &11430768
+  ObjectId: 51f211b7-501a-49e9-9525-5c729d2bc87d
+--- !u!1 &348362206
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 348362207}
+  - component: {fileID: 4088502685708228264}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &348362207
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348362206}
+  m_LocalRotation: {x: 0, y: 0.7036877, z: 0, w: -0.7105094}
+  m_LocalPosition: {x: 6620.72, y: 998.56, z: 3779.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 22
+  m_LocalEulerAnglesHint: {x: 0, y: 270.5528, z: 0}
+--- !u!114 &4088502685708228264
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 192290}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348362206}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1497,16 +569,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 87fffc59-0344-4a38-b9af-3028d6cc466f
---- !u!114 &11435330
+  ObjectId: b3d5af65-9358-4377-8cf8-f8141aacf9c9
+--- !u!1 &453673613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 453673614}
+  - component: {fileID: 6882200078777148533}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &453673614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453673613}
+  m_LocalRotation: {x: 0, y: 0.97803056, z: 0, w: 0.20846182}
+  m_LocalPosition: {x: 2236, y: 842.39, z: 11915}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 155.9356, z: 0}
+--- !u!114 &6882200078777148533
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155568}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453673613}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1514,16 +618,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 3e4eecc5-24dd-4ae2-bb3d-32d6e293402b
---- !u!114 &11437078
+  ObjectId: c84d7eac-32a4-47bb-afbe-06f76bc8e01c
+--- !u!1 &458238855
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 458238856}
+  - component: {fileID: 27035152941070862}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &458238856
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458238855}
+  m_LocalRotation: {x: 0, y: -0.45726332, z: 0, w: -0.8893314}
+  m_LocalPosition: {x: 9491.719, y: 999.9, z: 10084.68}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 31
+  m_LocalEulerAnglesHint: {x: 0, y: 414.4213, z: 0}
+--- !u!114 &27035152941070862
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 183346}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458238855}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1531,16 +667,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 297d502f-c4d7-457a-b56f-3dae9f4fb7dc
---- !u!114 &11437746
+  ObjectId: 30bb2178-ddfb-40be-a039-36a7784ffa58
+--- !u!1 &601543470
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 601543471}
+  - component: {fileID: 5914687136040769610}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &601543471
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601543470}
+  m_LocalRotation: {x: 0, y: 0.4166134, z: 0, w: 0.9090838}
+  m_LocalPosition: {x: 5837.17, y: 730.5, z: 969.55}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 49.241898, z: 0}
+--- !u!114 &5914687136040769610
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142856}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601543470}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1548,16 +716,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 32612ce6-9f6c-4191-b124-60d5d4bdc824
---- !u!114 &11445740
+  ObjectId: 33da4325-b3d0-4b49-a4e9-c47d1923ed84
+--- !u!1 &694655527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 694655528}
+  - component: {fileID: 7146263312638475612}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &694655528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694655527}
+  m_LocalRotation: {x: 0, y: 0.8427234, z: 0, w: 0.5383468}
+  m_LocalPosition: {x: 1735, y: 841.38, z: 11266}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 114.8577, z: 0}
+--- !u!114 &7146263312638475612
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 198442}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694655527}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1565,16 +765,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: a9569569-42cf-4c15-93fa-922341156eac
---- !u!114 &11447664
+  ObjectId: 6b5c7f06-d4c3-4a98-af5d-6fcd93030ac7
+--- !u!1 &717492610
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 717492611}
+  - component: {fileID: 4948770039299960123}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &717492611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717492610}
+  m_LocalRotation: {x: 0, y: -0.92852724, z: 0, w: 0.37126425}
+  m_LocalPosition: {x: 8176.49, y: 2225.15, z: 6456.3906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: -136.4128, z: 0}
+--- !u!114 &4948770039299960123
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 174864}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717492610}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1582,16 +814,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: cf3ac586-0094-4a1e-924a-503b28c0cde2
---- !u!114 &11453588
+  ObjectId: 590c71fb-c22a-4ad3-a0d5-e96b88c2ec6d
+--- !u!1 &727342608
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 727342609}
+  - component: {fileID: 5532296242279369285}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &727342609
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727342608}
+  m_LocalRotation: {x: 0, y: 0.8668965, z: 0, w: 0.4984883}
+  m_LocalPosition: {x: 8751.5, y: 683, z: 2378.3984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 120.1999, z: 0}
+--- !u!114 &5532296242279369285
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114844}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 727342608}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1599,16 +863,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: bf1666fe-a450-4ab4-a1c1-5ee54953b71b
---- !u!114 &11454452
+  ObjectId: 84c4139d-43c4-4cf7-8368-6bec131d8beb
+--- !u!1 &853053939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 853053940}
+  - component: {fileID: 139764305474796781}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &853053940
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853053939}
+  m_LocalRotation: {x: 0, y: 0.12786189, z: 0, w: -0.991792}
+  m_LocalPosition: {x: 4433.379, y: 1036.4, z: 6064.1914}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 26
+  m_LocalEulerAnglesHint: {x: 0, y: 345.3079, z: 0}
+--- !u!114 &139764305474796781
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 133760}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853053939}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1616,16 +912,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: aaf5f0fe-3ba1-44d0-81a2-b1d762822323
---- !u!114 &11455684
+  ObjectId: e2d7fda2-646c-4af7-8e38-7bab1316791f
+--- !u!1 &887021883
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 887021884}
+  - component: {fileID: 8118346065307240683}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &887021884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887021883}
+  m_LocalRotation: {x: 0, y: 0.60037434, z: 0, w: -0.7997191}
+  m_LocalPosition: {x: 8364.31, y: 1000.96, z: 11000.39}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 286.2066, z: 0}
+--- !u!114 &8118346065307240683
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 141328}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887021883}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1633,16 +961,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: b94243cc-846f-42fe-b900-0a3697de3713
---- !u!114 &11456406
+  ObjectId: b5c83fe6-a2c3-4ad0-954a-d3c7f20ff7a7
+--- !u!1 &1006802039
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1006802040}
+  - component: {fileID: 1365399048086834991}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1006802040
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006802039}
+  m_LocalRotation: {x: 0, y: 0.7913716, z: 0, w: 0.6113355}
+  m_LocalPosition: {x: 3848.0996, y: 866.94, z: 1149.8984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 104.6278, z: 0}
+--- !u!114 &1365399048086834991
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 166582}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006802039}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1650,16 +1010,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 3258f7f8-edd8-4b1c-a906-6aa896a1ff47
---- !u!114 &11457806
+  ObjectId: 8dc4c377-637d-4be4-8a07-de05d7c03e7c
+--- !u!1 &1112773113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1112773114}
+  - component: {fileID: 5392707993945549895}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1112773114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112773113}
+  m_LocalRotation: {x: 0, y: 0.36714402, z: 0, w: 0.93016416}
+  m_LocalPosition: {x: 7159.0996, y: 2996.08, z: 7421.3984}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 33
+  m_LocalEulerAnglesHint: {x: 0, y: 43.0792, z: 0}
+--- !u!114 &5392707993945549895
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 138522}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112773113}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1667,16 +1059,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 6fdd5e79-8a00-484a-aea2-8528ae617b33
---- !u!114 &11458466
+  ObjectId: ff59c88b-8b83-4bd8-b4c3-008eff49cd82
+--- !u!1 &1151674078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1151674079}
+  - component: {fileID: 4713712217000217580}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1151674079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151674078}
+  m_LocalRotation: {x: 0, y: 0.912452, z: 0, w: 0.40918374}
+  m_LocalPosition: {x: 1567.7002, y: 839.63, z: 10468}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 131.6929, z: 0}
+--- !u!114 &4713712217000217580
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 157134}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1151674078}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1684,16 +1108,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: b787d07b-a738-45b3-a713-01bfffe052d0
---- !u!114 &11467582
+  ObjectId: 0241bb2d-d3e9-4e99-a786-dffe50402aed
+--- !u!1 &1217511784
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1217511785}
+  - component: {fileID: 7333755328615408798}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1217511785
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217511784}
+  m_LocalRotation: {x: 0, y: 0.04496327, z: 0, w: -0.9989887}
+  m_LocalPosition: {x: 7035.6797, y: 2997.5, z: 6926.6484}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: -5.1541, z: 0}
+--- !u!114 &7333755328615408798
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 155420}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217511784}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1701,16 +1157,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 2adef53c-f4b1-42ff-b56b-ba9795e9eac5
---- !u!114 &11473832
+  ObjectId: 7646ab06-51f0-4d32-b570-4149db64570d
+--- !u!1 &1256628083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1256628084}
+  - component: {fileID: 949905015266672975}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1256628084
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256628083}
+  m_LocalRotation: {x: 0, y: 0.6719519, z: 0, w: -0.74059486}
+  m_LocalPosition: {x: 7883.69, y: 939.64, z: 3563.17}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 24
+  m_LocalEulerAnglesHint: {x: 0, y: 275.56418, z: 0}
+--- !u!114 &949905015266672975
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 109216}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256628083}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1718,16 +1206,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 7766c2e4-66db-4542-9e55-693053b84c81
---- !u!114 &11474696
+  ObjectId: 2b290b18-e3b2-4d02-a661-fbdb3277db0e
+--- !u!1 &1274521763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1274521764}
+  - component: {fileID: 7889954306867104588}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1274521764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274521763}
+  m_LocalRotation: {x: 0, y: 0.9861054, z: 0, w: 0.16612121}
+  m_LocalPosition: {x: 888.00977, y: 724.82, z: 8641.328}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 160.87529, z: 0}
+--- !u!114 &7889954306867104588
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 139074}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1274521763}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1735,16 +1255,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 2a1fcdbd-a942-4d13-b65e-47e653f2f873
---- !u!114 &11485366
+  ObjectId: 584ef2e2-46e1-4e63-95b4-21744378eed9
+--- !u!1 &1364186025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1364186026}
+  - component: {fileID: 4198443799049364835}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1364186026
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364186025}
+  m_LocalRotation: {x: 0, y: 0.47540197, z: 0, w: 0.8797687}
+  m_LocalPosition: {x: 8917.969, y: 696.37, z: 1305.3008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 56.7711, z: 0}
+--- !u!114 &4198443799049364835
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 106996}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1364186025}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1752,16 +1304,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 8099de69-141c-4ee1-b131-37851db8673a
---- !u!114 &11486250
+  ObjectId: 0429ff59-0d2a-4956-8cd8-02096b54e40e
+--- !u!1 &1389346250
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1389346251}
+  - component: {fileID: 8101041451603320473}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1389346251
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389346250}
+  m_LocalRotation: {x: 0, y: -0.92852724, z: 0, w: 0.37126425}
+  m_LocalPosition: {x: 8176.49, y: 2225.15, z: 6456.3906}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: -136.4128, z: 0}
+--- !u!114 &8101041451603320473
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 170300}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1389346250}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1769,16 +1353,48 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: a1f73b3d-5aec-449b-9b35-63cd80727078
---- !u!114 &11487808
+  ObjectId: ff09799e-1292-4a1e-8915-7656d73fd9b8
+--- !u!1 &1560838762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1560838763}
+  - component: {fileID: 7267344332966310175}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1560838763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560838762}
+  m_LocalRotation: {x: 0, y: -0.85976, z: 0, w: -0.5106984}
+  m_LocalPosition: {x: 6500.19, y: 1002.52, z: 10100.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 29
+  m_LocalEulerAnglesHint: {x: 0, y: 478.57928, z: 0}
+--- !u!114 &7267344332966310175
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 117942}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1560838762}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1786,16 +1402,49 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 03bb798b-7741-4262-9699-a31033ce46f3
---- !u!114 &11489382
+  ObjectId: 1c3438b4-8e90-489a-812c-5992afc777cd
+--- !u!1 &1564734970
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1564734972}
+  - component: {fileID: 6053987738938292658}
+  m_Layer: 0
+  m_Name: KrakabloaSeekAndDestroyLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1564734972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564734970}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 12500, y: -654, z: 47500}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 79321486}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6053987738938292658
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 168590}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564734970}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1803,71 +1452,52 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 78b358c8-029a-4fd2-b418-a12cb89fb834
---- !u!114 &11490202
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 140778}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: bd317bf8-f094-499a-9da1-aeaf1f7ee8e5
---- !u!114 &11491260
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 172632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
-    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
-      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: fd9d9bfa-6b1b-41fe-9790-2f55647f766c
---- !u!114 &11492116
-MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 107306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CustomScripts:
-  - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000444173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f794c6576656c436f6e666967536372697074030000000f4973526f6f74436f6d706f6e656e74125f646973636f76657261626c6552616e67650f5f676f486f7374696c6552616e6765000000010b0b020000000100409c4400a00c450b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000444173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f794c6576656c436f6e666967536372697074030000000f4973526f6f74436f6d706f6e656e74125f646973636f76657261626c6552616e67650f5f676f486f7374696c6552616e6765000000010b0b020000000100409c4400a00c450b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroyLevelConfigScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700c030000001d4a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c7305010000003a4173736574732e536372697074732e4c6576656c732e436f6d6d6f6e2e456e656d794465737472756374696f6e4d6f6e69746f72536372697074040000000f4973526f6f74436f6d706f6e656e740f5f6f626a65637469766553686970730f5f6f626a65637469766554616e6b73115f6f626a656374697665547572726574730004040401374a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e5368697050726f78795b5d03000000434a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f78795b5d03000000414a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e67576561706f6e50726f78795b5d030000000200000001090400000009050000000906000000070400000000010000000000000004354a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e5368697050726f787903000000070500000000010000000000000004414a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f7879030000000706000000000100000000000000043f4a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e67576561706f6e50726f7879030000000b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0c03000000544a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732c2056657273696f6e3d312e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c05010000003a4173736574732e536372697074732e4c6576656c732e436f6d6d6f6e2e456e656d794465737472756374696f6e4d6f6e69746f72536372697074040000000f4973526f6f74436f6d706f6e656e740f5f6f626a65637469766553686970730f5f6f626a65637469766554616e6b73115f6f626a656374697665547572726574730004040401374a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e5368697050726f78795b5d03000000434a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f78795b5d03000000414a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e67576561706f6e50726f78795b5d030000000200000001090400000009050000000906000000070400000000010000000000000004354a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e5368697050726f787903000000070500000000010000000000000004414a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e416e7469416972637261667454616e6b50726f7879030000000706000000000100000000000000043f4a756e64726f6f2e53696d706c65506c616e65732e4d6f64546f6f6c732e50726566616250726f786965732e526f746174696e67576561706f6e50726f7879030000000b
     ScriptType: Assets.Scripts.Levels.Common.EnemyDestructionMonitorScript, CombatChallenges-Assembly-CSharp,
       Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 6f595387-6380-4169-ada2-3170b956cbe9
---- !u!114 &11493768
+  ObjectId: 75bbe826-5dfa-4249-adb8-0ec81e94a2ab
+--- !u!1 &1650644840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1650644841}
+  - component: {fileID: 4778989983497017475}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1650644841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650644840}
+  m_LocalRotation: {x: 0, y: 0.9645097, z: 0, w: -0.2640474}
+  m_LocalPosition: {x: 9024, y: 943.79, z: 3935.6016}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 210.6207, z: 0}
+--- !u!114 &4778989983497017475
 MonoBehaviour:
-  m_ObjectHideFlags: 10
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 193352}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650644840}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
@@ -1875,18 +1505,497 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CustomScripts:
   - Component: {fileID: 0}
-    ScriptData: 0001000000ffffffff01000000000000000c0200000020436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172700501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
     ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
       CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
-  ObjectId: 965d24fb-ae24-44ca-999c-7af6552e71c5
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 107306}
-  m_IsPrefabParent: 1
+  ObjectId: 7d31519d-46d6-40f5-889e-acf141db24f4
+--- !u!1 &1734260943
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1734260944}
+  - component: {fileID: 3531198527362638318}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1734260944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734260943}
+  m_LocalRotation: {x: 0, y: 0.95068336, z: 0, w: -0.31016323}
+  m_LocalPosition: {x: 9867.39, y: 992.02, z: 5243.93}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 216.13809, z: 0}
+--- !u!114 &3531198527362638318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1734260943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: 011f706d-bbe2-42ea-8d6e-5973e99f36ce
+--- !u!1 &1747180299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1747180300}
+  - component: {fileID: 2399742847636341444}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1747180300
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747180299}
+  m_LocalRotation: {x: 0, y: -0.93192357, z: 0, w: 0.36265492}
+  m_LocalPosition: {x: 5959.32, y: 2129.27, z: 8240.37}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: -137.4733, z: 0}
+--- !u!114 &2399742847636341444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1747180299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: 9ad5e708-941b-4820-81ee-3c1776fb7d09
+--- !u!1 &1829823368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1829823369}
+  - component: {fileID: 5205531012170268760}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1829823369
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829823368}
+  m_LocalRotation: {x: 0, y: 0.9570001, z: 0, w: -0.2900877}
+  m_LocalPosition: {x: 6133.18, y: 1004.15, z: 5126.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 213.7264, z: 0}
+--- !u!114 &5205531012170268760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1829823368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: 8926bcef-7972-4359-8f50-4d1605529de3
+--- !u!1 &1834058113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1834058114}
+  - component: {fileID: 7161880353638463849}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1834058114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834058113}
+  m_LocalRotation: {x: 0, y: -0.272786, z: 0, w: -0.96207476}
+  m_LocalPosition: {x: 5633.83, y: 973.6, z: 9288.539}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 28
+  m_LocalEulerAnglesHint: {x: 0, y: 391.6602, z: 0}
+--- !u!114 &7161880353638463849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1834058113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: 9672fdf3-dd2d-4d7c-9297-405f222f28e2
+--- !u!1 &1866181791
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1866181792}
+  - component: {fileID: 3275390564731484903}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1866181792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866181791}
+  m_LocalRotation: {x: 0, y: 0.86137986, z: 0, w: 0.50796145}
+  m_LocalPosition: {x: 10198.1, y: 1011.3, z: 6597.1016}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 118.943695, z: 0}
+--- !u!114 &3275390564731484903
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1866181791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: 9db67409-fb24-4d0e-82af-28fb8d3e446d
+--- !u!1 &1927988892
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1927988893}
+  - component: {fileID: 3997293489735328094}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1927988893
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927988892}
+  m_LocalRotation: {x: 0, y: 0.22663003, z: 0, w: 0.97398096}
+  m_LocalPosition: {x: 11052.801, y: 675.3, z: 1267}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 26.1975, z: 0}
+--- !u!114 &3997293489735328094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1927988892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: a198505b-5a41-4e22-b2ba-34b82854f32b
+--- !u!1 &1950404748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1950404749}
+  - component: {fileID: 426871516971767108}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1950404749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950404748}
+  m_LocalRotation: {x: 0.0000001322478, y: 0.9961947, z: 0.000000011525116, w: -0.08715589}
+  m_LocalPosition: {x: 12904.801, y: 673.64, z: 2321.8008}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -170, z: 0}
+--- !u!114 &426871516971767108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950404748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: 66621425-e430-428a-91c8-25eb6d1e095e
+--- !u!1 &2034652379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2034652380}
+  - component: {fileID: 7779225925093062796}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2034652380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034652379}
+  m_LocalRotation: {x: 0, y: -0.34380993, z: 0, w: 0.9390393}
+  m_LocalPosition: {x: 8043.4004, y: 690, z: 683.60156}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: -40.2184, z: 0}
+--- !u!114 &7779225925093062796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034652379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: f8d9daf2-98bf-43d4-9a04-a34331e52ef7
+--- !u!1 &2096826003
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096826004}
+  - component: {fileID: 4418361920931281523}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2096826004
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096826003}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1830.92, y: 985.12, z: 2950.53}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4418361920931281523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096826003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: b64e1bc6-2dc6-4cfe-b241-c13e48a6fb60
+--- !u!1 &2147060467
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2147060468}
+  - component: {fileID: 8152041457739432639}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2147060468
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147060467}
+  m_LocalRotation: {x: 0, y: -0.808574, z: 0, w: -0.5883945}
+  m_LocalPosition: {x: 7753.2793, y: 1123.97, z: 9267.559}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 79321486}
+  m_RootOrder: 30
+  m_LocalEulerAnglesHint: {x: 0, y: 467.9137, z: 0}
+--- !u!114 &8152041457739432639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147060467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 463027472, guid: 3cde37892b4f7594bbbc3ac6c74ecab7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CustomScripts:
+  - Component: {fileID: 0}
+    ScriptData: 0001000000ffffffff01000000000000000c0200000057436f6d6261744368616c6c656e6765732d417373656d626c792d4353686172702c2056657273696f6e3d302e302e302e302c2043756c747572653d6e65757472616c2c205075626c69634b6579546f6b656e3d6e756c6c0501000000434173736574732e536372697074732e4c6576656c732e5365656b416e6444657374726f792e5365656b416e6444657374726f79537061776e506f696e74536372697074010000000f4973526f6f74436f6d706f6e656e74000102000000010b
+    ScriptType: Assets.Scripts.Levels.SeekAndDestroy.SeekAndDestroySpawnPointScript,
+      CombatChallenges-Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  ObjectId: 8ae633be-43b8-4247-bf21-565eea9450ed

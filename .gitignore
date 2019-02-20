@@ -29,8 +29,10 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
-/ModAssetBundles
-/.mdb
 /CombatChallenges/.mdb
+/CombatChallenges/.vs
 /CombatChallenges/Library
 /CombatChallenges/ModAssetBundles
+/CombatChallenges/Temp
+/CombatChallenges/obj
+/CombatChallenges/StyleCop.Cache
